@@ -1,27 +1,28 @@
 <template lang="">
-    <div id="technology" class="technology">
+    <div data-aos="fade-up" id="technology" class="technology">
         <h1 class="technology__title">Tecnologias</h1>
         <div class="technology__content">
-            <div>
-                <h2 data-aos="fade-up" class="content__title">Backend</h2>
-                <div data-aos="fade-up" class="content__row">
-                    <div>
-                        <img class="technology__js" src="../assets/img/node.png" alt="">
-                    </div>
-                    <div>
-                        <img class="technology__js" src="../assets/img/flask.png" alt="">
-                    </div>
+            <div data-aos="fade-up">
+                <h2 class="content__title">Backend</h2>
+                <div class="content__row">
+                    <img class="technology__js" src="../assets/img/node.png" alt="">
+                    <img class="technology__js" src="../assets/img/flask.png" alt="">
+                </div>
+                <div class="content__especification">
+                    <p>● Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-            <div class="content__frontend">
-                <h2 data-aos="fade-up" class="content__title">Frontend</h2>
-                <div data-aos="fade-up" class="content__row">
-                    <div>
-                        <img class="technology__js" src="../assets/img/node.png" alt="">
+            <div data-aos-delay="500" data-aos="fade-up" class="content__frontend">
+                <div>
+                    <h2 class="content__title">Frontend</h2>
+                    <div class="content__row">
+                        <img class="technology__js" src="../assets/img/angular.png" alt="">
+                        <img class="technology__js" src="../assets/img/vue.png" alt="">
+                        <img class="technology__js" src="../assets/img/react.png" alt="">
                     </div>
-                    <div>
-                        <img class="technology__js" src="../assets/img/flask.png" alt="">
-                    </div>
+                <div class="content__especification">
+                    <p>● Lorem ipsum dolor sit amet.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -45,7 +46,7 @@ AOS.init({
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
+  delay: 200, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
   once: true, // whether animation should happen only once - while scrolling down
@@ -61,10 +62,6 @@ export default {
     .technology__title {
         font-size: 4rem;
         color: var(--color-highlight);
-    }
-
-    .content__frontend {
-        margin-top: 20rem;
     }
 
     .technology {
@@ -87,6 +84,10 @@ export default {
     .content__row {
         display: flex;
         gap: 5px;
+    }
+    .content__especification {
+        margin-top: 5rem;
+        font-size: 1rem;
     }
   
 </style>

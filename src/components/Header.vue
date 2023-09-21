@@ -1,5 +1,15 @@
 <template lang="">
     <div class="header">
+        <div class="header__menu">
+            <div class="menu__link" >
+                <fa class="link__icon" icon="fa-solid fa-section" />
+                <a class="link__name" href="#technology">Tecnologias</a>
+            </div>
+            <div class="menu__link" >
+                <fa class="link__icon" icon="fa-solid fa-briefcase" />
+                <a class="link__name" href="#technology">Desarrollos</a>
+            </div>
+        </div>
         <div class="header__user-info">
             <div class="user-info__content-image">
                 <img class="user-info__image" src="../assets/img/me.jpg" alt="">
@@ -18,11 +28,11 @@
                 <h1 class="user-content__about">Acerca de mi</h1>
             </div>
             <p class="user-content__about-description">desarrollador fullstack con un año de experiencia, analista programador y mi modalidad de trabajo es con angular para el front-end y nodejs para back-end, soy una persona que le encanta aprender cosas nuevas y estoy en constante aprendizaje, recibo las criticas y consejos positivamente para mejorar como programador, soy una persona empatica y con un buen temperamento.</p>
-            <div class="user-content__cont-button">
-                <a href="#technology" class="user-content__buttons">
-                    Conoce mas de mi
-                </a>
-            </div>
+                <div class="user-content__cont-button">
+                    <a href="#technology" class="user-content__buttons">
+                        Conoce mas de mi
+                    </a>
+                </div>
         </div>
     </div>
 </template>
@@ -43,11 +53,23 @@ export default {
         opacity: 1;
     }
 
+    .link__name {
+        text-decoration: none;
+        color: var(--color-primary);
+        margin-left: 1rem;
+    }
+
+    .link__icon {
+        font-size: 1rem;
+        color: var(--color-primary)
+    }
 
     .header {
         display: grid;
-        grid-template-areas: "user content";
-        grid-template-columns: 40% auto;
+        grid-template-areas: "menu menu" 
+                             "user content";
+        grid-template-columns: auto;
+        gap: 100px;
     }
     .header__user-info {
         grid-area: user;
@@ -56,6 +78,37 @@ export default {
         align-items: center;
         gap: 10px;
     }
+    .header__menu {
+        padding: 0.5rem 3rem;
+        border-radius: 1rem;
+        grid-area: menu;
+        font-size: 1.5rem;
+        display: flex;
+        gap: 3rem;
+    }
+   
+    .menu__link {
+        position: relative;
+        opacity: 0.8;
+    }
+
+    .menu__link::after {    
+        position: absolute;
+        display: block;
+        content: "";    
+        background-color: var(--color-highlight);
+        height: 1px;
+        transition: all 300ms ease-in-out;
+        width: 0%;
+    }
+
+    .menu__link:hover:after {
+        width: 100%;
+    }
+    .menu__link:hover {
+        opacity: 1;
+    }
+    
     .user-info__content-image {
         width: fit-content;
         border: 0.3rem solid white;
@@ -99,6 +152,7 @@ export default {
         text-decoration: none;
         transition: all 300ms ease-in-out;
         color: black;
+        font-weight: bold;
     }
     .user-content__cont-button {
         margin-top: 5rem;
