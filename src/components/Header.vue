@@ -15,7 +15,7 @@
                 <img class="user-info__image" src="../assets/img/me.jpg" alt="">
             </div>
             <h2 class="user-info__name">Jorge cortes</h2>
-            <h3 class="user-info__job">Analista Programador</h3>
+            <h3 class="user-info__job">Desarrollador fullstack</h3>
             <div class="user-info-social">
                 <a class="info-social__icon" target="_blank" href="https://www.linkedin.com/in/jorge-tomas-cortes-fernandez-065772236/"><fa icon="fa-brands fa-linkedin"/></a>
                 <a class="info-social__icon" target="_blank" href="https://github.com/Josh0Sprime"><fa icon="fa-brands fa-square-github"/></a>
@@ -90,6 +90,7 @@ export default {
     .menu__link {
         position: relative;
         opacity: 0.8;
+        cursor: pointer;
     }
 
     .menu__link::after {    

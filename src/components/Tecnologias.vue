@@ -27,10 +27,11 @@
             </div>
         </div>
     </div>
-</template>
+</template> 
 <script>
 
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 AOS.init({
   // Global settings:
@@ -65,7 +66,8 @@ export default {
     }
 
     .technology {
-        margin-top: 12rem;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
     }
 
     .technology__js {

@@ -4,7 +4,6 @@
 
 <script>
 import { defineAsyncComponent } from 'vue'
-import 'aos/dist/aos.css';
 
 export default {
   name: 'App',
@@ -38,7 +37,7 @@ body {
 }
 
 #app {
-  margin: 10rem auto;
+  margin: 5rem auto;
   max-width: 70rem;
   height: 10%;
   color: var(--color-primary);
