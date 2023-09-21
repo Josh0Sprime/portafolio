@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Home />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { defineAsyncComponent } from 'vue'
+import 'aos/dist/aos.css';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Home: defineAsyncComponent(() => import("./view/Home.vue"))
   }
 }
 </script>
 
 <style>
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+:root {
+  --color-primary: #FFF;
+  --color-highlight: #a3e635;
+  --icon-size-primary: 3rem;
+}
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 10px;
+  background-color: rgb(2 6 23);
+  font-family: "Poppins";
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 15rem auto;
+  max-width: 70rem;
+  height: 10%;
+  color: var(--color-primary);
 }
 </style>
