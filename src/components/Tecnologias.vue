@@ -1,12 +1,15 @@
 <template lang="">
-    <div data-aos="fade-up" id="technology" class="technology">
-        <h1 class="technology__title">Tecnologias</h1>
+    <div id="technology" class="technology">
+        <header data-aos="fade-up" class="technology__header">
+            <fa class="link__icon technology__icon" icon="fa-solid fa-code" />
+            <h1 class="technology__title">Tecnologias</h1>
+        </header>
         <div data-aos="fade-up" class="technology__content">
             <div>
                 <h2 class="content__title">Conocimientos en tecnologias</h2>
                 <p class="content__description">Siempre estoy en constante aprendizaje para desarrollar aplicaciones web con las mejores practicas y las tecnologias mas nuevas y populares</p>
             </div>
-            <div class="container-images">
+            <div data-aos="fade-up" class="container-images">
                 <div class="content__images">
                     <div class="content__container-image">
                         <p class="image__name">Angular</p>
@@ -46,12 +49,17 @@ export default {
 </script>
 <style scoped>
 
+    .technology__icon {
+        color: var(--color-primary);
+        font-size: 3rem;
+    }
     .content__header {
         padding-top: 32px;
     }
 
     .image__name {
         transition: all 300ms ease-in-out;
+        transition-delay: 100ms;
         position: absolute;
         top: -100%;
         font-size: 1rem;
@@ -130,6 +138,12 @@ export default {
     .content__especification {
         margin-top: 5rem;
         font-size: 1rem;
+    }
+
+    .technology__header {
+        display: flex;  
+        align-items: center;
+        gap: 1rem;
     }
   
 </style>

@@ -2,13 +2,18 @@
     <div class="header">
         <div class="header__menu">
             <div class="menu__link" >
-                <fa class="link__icon" icon="fa-solid fa-section" />
+                <fa class="link__icon" icon="fa-solid fa-code" />
                 <a class="link__name" href="#technology">Tecnologias</a>
             </div>
             <div class="menu__link" >
                 <fa class="link__icon" icon="fa-solid fa-briefcase" />
                 <a class="link__name" href="#technology">Desarrollos</a>
             </div>
+            <div class="menu__link" >
+                <fa class="link__icon" icon="fa-solid fa-address-book" />
+                <a class="link__name" href="#technology">Contacto</a>
+            </div>
+            <div class="header__menu-div"></div>
         </div>
         <div class="header__user-info">
             <div class="user-info__content-image">
@@ -77,14 +82,17 @@
         gap: 10px;
     }
     .header__menu {
-        border-radius: 1rem;
         grid-area: menu;
         font-size: 1.5rem;
         display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
         gap: 3rem;
     }
    
     .menu__link {
+        display: flex;
+        align-items: center;
         position: relative;
         opacity: 0.8;
         cursor: pointer;
@@ -93,6 +101,7 @@
     .menu__link::after {    
         position: absolute;
         display: block;
+        bottom: 0;
         content: "";    
         background-color: var(--color-highlight);
         height: 1px;
@@ -181,5 +190,11 @@
         display: flex;
         gap: 50px;
         font-size: 2rem;
+    }
+
+    .header__menu-div {
+        width: 100%;
+        background-color: #ffffff74;
+        height: 1px;
     }
 </style>
