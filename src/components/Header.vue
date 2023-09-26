@@ -29,17 +29,15 @@
             </div>
             <p class="user-content__about-description">desarrollador fullstack con un año de experiencia, analista programador y mi modalidad de trabajo es con angular para el front-end y nodejs para back-end, soy una persona que le encanta aprender cosas nuevas y estoy en constante aprendizaje, recibo las criticas y consejos positivamente para mejorar como programador, soy una persona empatica y con un buen temperamento.</p>
                 <div class="user-content__cont-button">
-                    <a href="#technology" class="user-content__buttons">
-                        Conoce mas de mi
+                    <a class="user-content__buttons">
+                        Descargar CV
                     </a>
                 </div>
         </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+  
 </script>
 <style scoped>
     .info-social__icon{
@@ -79,7 +77,6 @@ export default {
         gap: 10px;
     }
     .header__menu {
-        padding: 0.5rem 3rem;
         border-radius: 1rem;
         grid-area: menu;
         font-size: 1.5rem;
