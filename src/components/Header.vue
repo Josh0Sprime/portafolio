@@ -11,7 +11,7 @@
             </div>
             <div class="menu__link" >
                 <fa class="link__icon" icon="fa-solid fa-address-book" />
-                <a class="link__name" href="#technology">Contacto</a>
+                <a class="link__name" href="#contact">Contacto</a>
             </div>
             <div class="header__menu-div"></div>
         </div>
@@ -33,16 +33,16 @@
                 <h1 class="user-content__about">Acerca de mi</h1>
             </div>
             <p class="user-content__about-description">desarrollador fullstack con un año de experiencia, analista programador y mi modalidad de trabajo es con angular para el front-end y nodejs para back-end, soy una persona que le encanta aprender cosas nuevas y estoy en constante aprendizaje, recibo las criticas y consejos positivamente para mejorar como programador, soy una persona empatica y con un buen temperamento.</p>
-                <div class="user-content__cont-button">
-                    <a class="user-content__buttons">
-                        Descargar CV
-                    </a>
-                </div>
+            <div class="user-content__cont-button">
+                <a :href="cv" download class="user-content__buttons">
+                    Descargar CV
+                </a>
+            </div>
         </div>
     </div>
 </template>
 <script setup>
-  
+  import cv from "../assets/files/CV.pdf"
 </script>
 <style scoped>
     .info-social__icon{
@@ -123,24 +123,23 @@
         overflow: hidden;
     }
     .user-info__name {
-        font-size: 3rem;
+        font-size: var(--title);
         color: #a3e635;
     }
 
     .user-info__job {
-        font-size: 2rem;
+        font-size: var(--subtitle);
     }
     .user-info__image {
-        width: 20rem;
+        width: 10rem;
     }
 
     .header__user-content {
         grid-area: content;
-        margin-top: 2rem;
     }
 
     .user-content__about {
-        font-size: 4rem;
+        font-size: var(--title);
         color: var(--color-highlight);
         
     }
