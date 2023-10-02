@@ -67,10 +67,15 @@
                     <h3 class="certificate__title">{{ title }}</h3>
                     <p class="certificate__source">{{ source }}</p>
                 </div>
-                <div v-if="!isFullLength" @click="incrementPage" class="certificates__see-more">
-                    <fa class="see-more__icon" icon="fa-soli fa-chevron-down"/>
-                    <p>Ver mas...</p>
-                </div>
+            </div>
+
+            <div v-if="isLoading" class="loading">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            </div>
+
+            <div v-if="!isFullLength" @click="incrementPage" class="certificates__see-more">
+                <fa class="see-more__icon" icon="fa-soli fa-chevron-down"/>
+                <p>Ver mas...</p>
             </div>
         </div>
     </div>
@@ -93,8 +98,14 @@ const currentPage = ref(3);
 const isFullLength = ref(false);
 
 const incrementPage = () => {
-    currentPage.value = currentPage.value + 3;
+    isLoading.value = true;
+    setTimeout(() => {
+        currentPage.value = currentPage.value + 3;
+        isLoading.value = false;
+    }, 1000);
 }
+
+const isLoading = ref(false);
 
 const pages = ref([
     {
@@ -140,22 +151,79 @@ const pages = ref([
 ]);
 
 watch(currentPage, (newValue) => {
-    console.log(pages.value);
     if(newValue === pages.value.length || newValue === pages.value.length +1) {
         isFullLength.value = true;
-        console.log(isFullLength.value);
     }
 })
 
 </script>
 <style scoped>
 
+.loading {
+    display: flex;
+    justify-content: center;
+}
+.lds-ellipsis {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
     .certificate__image-container {
         width: fit-content;
         overflow: hidden;
         border-radius: 0.5rem;
     }
     .certificates__see-more {
+        margin-top: 3rem;
         opacity: 0.8;
         font-size: var(--subtitle);
         font-weight: bold;
