@@ -23,12 +23,53 @@
             </router-link>
             <div class="header__menu-div"></div>
         </div>
-        <div class="header__hamburguer">
-            <fa class="link__icon-small" icon="fa-solid fa-bars" />
+        <div @click="openMenu" class="header__hamburguer">
+            <fa ref="menuIcon" class="link__icon-small-no-activate" icon="fa-solid fa-bars" />
+            <div class="header__menu-no-active" ref="variable">
+                <router-link :to="{ name: 'inicio' }" class="menu__link-phone">
+                    <fa class="link__icon-phone" icon="fa-solid fa-home" />
+                    <a class="link__name-small">Inicio</a>
+                </router-link>
+                <router-link :to="{ name: 'tecnologias' }" class="menu__link-phone">
+                    <fa class="link__icon-phone" icon="fa-solid fa-code" />
+                    <a class="link__name-small">Tecnologias</a>
+                </router-link>
+                <router-link :to="{ name: 'desarrollos' }" class="menu__link-phone">
+                    <fa class="link__icon-phone" icon="fa-solid fa-briefcase" />
+                    <a class="link__name-small">Desarrollos</a>
+                </router-link>
+                <router-link :to="{ name: 'contacto' }" class="menu__link-phone">
+                    <fa class="link__icon-phone" icon="fa-solid fa-address-book" />
+                    <a class="link__name-small">Contacto</a>
+                </router-link>
+                <router-link :to="{ name: 'acercaDeMi' }" class="menu__link-phone">
+                    <fa class="link__icon-phone" icon="fa-solid fa-user" />
+                    <a class="link__name-small">Acerca de mi</a>
+                </router-link>
+        </div>
         </div>
     </div>
 </template>
 <script setup>
+    import { ref } from 'vue'
+
+    const variable = ref(null);
+    const menuIcon = ref(null)
+
+    const isMenuActivated = ref(false);
+
+    const openMenu = () => {
+        if( !isMenuActivated.value ) {
+            variable.value.classList.add("header__menu-small");
+            // menuIcon.value.classList.add("link__icon-small");
+            isMenuActivated.value = true;
+        }else{
+            variable.value.classList.remove("header__menu-small");
+            // menuIcon.value.classList.remove("link__icon-small");
+            isMenuActivated.value = false;
+        }
+
+    }
 </script>
 <style scoped>
 
@@ -39,6 +80,9 @@
         color: white;
     }
 
+    .header__menu-no-active {
+        display: none;
+    }
     .info-social__icon:hover{
         opacity: 1;
     }
@@ -52,7 +96,15 @@
     .link__icon-small {
         display: none;
         font-size: 1.5rem;
-        margin-bottom: 4rem;
+        background-color: var(--color-highlight);
+        padding: 0.5rem 0.8rem;
+        border-radius: 20% 20% 0 0;
+        color: var(--color-primary);
+    }
+
+    .link__icon-small-no-activate {
+        display: none;
+        font-size: 1.5rem;
         background-color: var(--color-highlight);
         padding: 0.5rem 0.8rem;
         border-radius: 20%;
@@ -126,8 +178,12 @@
         color: var(--color-highlight);
         
     }
+    
     .user-content__about-description {
         font-size: 1rem;
+    }
+    .link__icon-phone {
+        font-size: 1.5rem;
     }
   
     .buttons__ver-mas {
@@ -136,6 +192,17 @@
         font-weight: bold;
     }
 
+    .header__menu-small {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-primary);
+        width: fit-content;
+        border-radius: 0 1rem 1rem;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        position: absolute;
+    }
     .user-content__container-about {
         display: flex;
         align-items: center;
@@ -151,6 +218,20 @@
         gap: 50px;
         font-size: 2rem;
     }
+    .menu__link-phone {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+    .header {
+        z-index: -1;
+    }
+    .header__hamburguer {
+        display: none;
+        margin-bottom: 5rem;
+    }
 
     .header__menu-div {
         width: 100%;
@@ -165,7 +246,7 @@
         .header {
             padding: 0 2rem;
         }
-        .link__icon-small {
+        .header__hamburguer {
             display: block;
         }
     }
@@ -176,12 +257,18 @@
         .link__icon-small {
             display: block;
         }
+        .link__icon-small-no-activate {
+            display: block;
+        }
     }
     @media (max-width: 820px){
         .header__menu {
             display: none;
         }
         .link__icon-small {
+            display: block;
+        }
+        .link__icon-small-no-activate {
             display: block;
         }
     }
