@@ -1,14 +1,18 @@
 <template lang="">
     <div id="technology" class="technology">
-        <header class="technology__header">
-            <fa class="link__icon technology__icon" icon="fa-solid fa-code" />
-            <h1 class="technology__title">Tecnologias</h1>
+        <header>
+            <div class="technology__header-container">
+                <div class="technology__header">
+                    <fa class="link__icon technology__icon" icon="fa-solid fa-code" />
+                    <h1 class="technology__title">Tecnologias</h1>
+                </div>
+                <div>
+                    <h2 class="content__title">Conocimientos en tecnologias</h2>
+                    <p class="content__description">Siempre estoy en constante aprendizaje para desarrollar aplicaciones web con las mejores practicas y las tecnologias mas nuevas y populares</p>
+                </div>
+            </div>
         </header>
         <div class="technology__content">
-            <div>
-                <h2 class="content__title">Conocimientos en tecnologias</h2>
-                <p class="content__description">Siempre estoy en constante aprendizaje para desarrollar aplicaciones web con las mejores practicas y las tecnologias mas nuevas y populares</p>
-            </div>
             <div class="container-images">
                 <div class="content__images">
                     <div class="content__container-image">
@@ -35,6 +39,14 @@
                         <p class="image__name">Vue</p>
                         <img class="container-image__image" src="../assets/img/vue.png" alt="">
                     </div>
+                    <div class="content__container-image">
+                        <p class="image__name">Typescript</p>
+                        <img class="container-image__image" src="../assets/img/typescript.png" alt="">
+                    </div>
+                    <div class="content__container-image">
+                        <p class="image__name">Django</p>
+                        <img class="container-image__image" src="../assets/img/django.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,7 +63,7 @@ export default {
 
     .technology__icon {
         color: var(--color-primary);
-        font-size: 3rem;
+        font-size: var(--title-low)
     }
     .content__header {
         padding-top: 32px;
@@ -73,17 +85,13 @@ export default {
     }
     .content__images {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 4rem;
-    }
-    .content__images_two {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 2rem;
     }
    
     .container-image__image {
         width: 50px;
+        object-fit: contain;
     }
     .content__container-image {
         opacity: 0.8;
@@ -94,6 +102,12 @@ export default {
         justify-content: center;
         padding: 5px;
         transition: all 300ms ease-in-out;
+    }
+
+    .technology__header-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
     
     .content__container-image:hover .image__name {
@@ -117,17 +131,21 @@ export default {
         justify-content: space-between;
     }
     .technology__title {
-        font-size: var(--title);
+        font-size: var(--title-low);
         color: var(--color-highlight);
     }
 
     .technology {
+        display: flex;
         margin-top: 20rem;
         margin-bottom: 20rem;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .content__title {
-        font-size: var(--subtitle);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 
  
@@ -144,6 +162,16 @@ export default {
         display: flex;  
         align-items: center;
         gap: 1rem;
+    }
+
+    @media (max-width: 760px) {
+        .technology {
+            display: block;
+            padding: 0 2rem;
+        }
+        .content__images {
+            gap: 2rem;
+        }
     }
   
 </style>

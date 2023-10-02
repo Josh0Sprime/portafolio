@@ -21,10 +21,11 @@ export default {
 }
 :root {
   --color-primary: #FFF;
-  --color-highlight: #a3e635;
+  --color-highlight: rgb(236 72 153/1);
   --icon-size-primary: 3rem;
   --title: 3rem;
-  --subtitle: 2rem;
+  --subtitle: 1rem;
+  --title-low: 2rem;
 }
 * {
   margin: 0;
