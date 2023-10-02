@@ -25,6 +25,7 @@ export default {
   --icon-size-primary: 3rem;
   --title: 3rem;
   --subtitle: 1rem;
+  --subtitle-cert: 1.5rem;
   --title-low: 2rem;
 }
 * {
@@ -46,23 +47,12 @@ body {
   color: var(--color-primary);
 }
 
-body::-webkit-scrollbar {
-  background-color: transparent;
-  width: 5px;
+@media (max-width: 760px) {
+  #app {
+   margin: 1rem auto;
+  }
 }
-
-body::-webkit-scrollbar-thumb {
-  background-color: #ffffffa1;
-  border-radius: 10px;
+body {
+  overflow: hidden;
 }
-
-body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-primary);
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  margin: 80px 0;
-}
-
 </style>

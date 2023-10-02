@@ -38,6 +38,25 @@ export default {
 }
 </script>
 <style scoped>
+
+    .contact::-webkit-scrollbar {
+      background-color: transparent;
+      width: 5px;
+    }
+
+    .contact::-webkit-scrollbar-thumb {
+      background-color: #ffffffa1;
+      border-radius: 10px;
+    }
+
+    .contact::-webkit-scrollbar-thumb:hover {
+      background-color: var(--color-primary);
+      border-radius: 10px;
+    }
+
+    .contact::-webkit-scrollbar-track {
+      margin: 80px 0;
+    }
     .header__content {
         display: flex;
         align-items: center;
@@ -58,7 +77,7 @@ export default {
     }
 
     .form__btn:hover {
-        background-color: #7db327;
+        background-color: rgb(219 39 119/1);;
     }
     .contact__form {
         flex-basis: 40%;
@@ -108,9 +127,8 @@ export default {
         margin-top: 2rem;
     }
     .contact {
+        padding: 2rem 0;
         display: flex;
-        margin-top: 20rem;
-        margin-bottom: 20rem;
         color: white;
         justify-content: space-between;
     }
@@ -121,6 +139,12 @@ export default {
     .description__content {
         margin-top: 1rem;
         font-size: 1rem;
+    }
+
+    .contact {
+        max-height: 30rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     @media (max-width: 760px) {
