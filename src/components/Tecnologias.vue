@@ -72,11 +72,12 @@
             <div v-if="isLoading" class="loading">
                 <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             </div>
-
+            
             <div v-if="!isFullLength" @click="incrementPage" class="certificates__see-more">
                 <fa class="see-more__icon" icon="fa-soli fa-chevron-down"/>
                 <p>Ver mas...</p>
             </div>
+
         </div>
     </div>
 </template> 

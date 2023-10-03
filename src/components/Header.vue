@@ -24,7 +24,7 @@
             <div class="header__menu-div"></div>
         </div>
         <div @click="openMenu" class="header__hamburguer">
-            <fa ref="menuIcon" class="link__icon-small-no-activate" icon="fa-solid fa-bars" />
+            <fa ref="menuIcon" :class="!isMenuActivated ? 'link__icon-small-no-activate' : 'link__icon-small'" icon="fa-solid fa-bars" />
             <div class="header__menu-no-active" ref="variable">
                 <router-link :to="{ name: 'inicio' }" class="menu__link-phone">
                     <fa class="link__icon-phone" icon="fa-solid fa-home" />
@@ -61,11 +61,9 @@
     const openMenu = () => {
         if( !isMenuActivated.value ) {
             variable.value.classList.add("header__menu-small");
-            // menuIcon.value.classList.add("link__icon-small");
             isMenuActivated.value = true;
         }else{
             variable.value.classList.remove("header__menu-small");
-            // menuIcon.value.classList.remove("link__icon-small");
             isMenuActivated.value = false;
         }
 
@@ -231,6 +229,7 @@
     .header__hamburguer {
         display: none;
         margin-bottom: 5rem;
+        width: fit-content;
     }
 
     .header__menu-div {
