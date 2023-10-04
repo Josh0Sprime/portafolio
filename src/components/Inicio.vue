@@ -54,7 +54,7 @@
         filter: grayscale(0);
     }
     .prog__img {
-        width: 5rem;
+        width: 3rem;
     }
     .inicio__useruser-info__user-name {
         color: var(--color-highlight);
