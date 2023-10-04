@@ -1,25 +1,35 @@
 <template>
     <div class="header">
         <div class="header__menu">
-            <router-link :to="{ name: 'inicio' }" class="menu__link">
-                <fa class="link__icon" icon="fa-solid fa-home" />
-                <a class="link__name">Inicio</a>    
+            <router-link :to="{ name: 'inicio' }">
+                <div class="menu__link">
+                    <fa class="link__icon" icon="fa-solid fa-home" />
+                    <a class="link__name">Inicio</a>    
+                </div>
             </router-link>
-            <router-link :to="{ name: 'tecnologias' }" class="menu__link">
-                <fa class="link__icon" icon="fa-solid fa-code" />
-                <a class="link__name">Tecnologias</a>
+            <router-link :to="{ name: 'tecnologias' }">
+                <div class="menu__link">
+                    <fa class="link__icon" icon="fa-solid fa-code" />
+                    <a class="link__name">Tecnologias</a>
+                </div>
             </router-link>
-            <router-link :to="{ name: 'desarrollos' }" class="menu__link">
-                <fa class="link__icon" icon="fa-solid fa-briefcase" />
-                <a class="link__name">Desarrollos</a>
+            <router-link :to="{ name: 'desarrollos' }">
+                <div class="menu__link">
+                    <fa class="link__icon" icon="fa-solid fa-briefcase" />
+                    <a class="link__name">Desarrollos</a>
+                </div>
             </router-link>
-            <router-link :to="{ name: 'contacto' }" class="menu__link">
-                <fa class="link__icon" icon="fa-solid fa-address-book" />
-                <a class="link__name">Contacto</a>
+            <router-link :to="{ name: 'contacto' }">
+                <div class="menu__link">
+                    <fa class="link__icon" icon="fa-solid fa-address-book" />
+                    <a class="link__name">Contacto</a>
+                </div>
             </router-link>
-            <router-link :to="{ name: 'acercaDeMi' }" class="menu__link">
-                <fa class="link__icon" icon="fa-solid fa-user" />
-                <a class="link__name">Acerca de mi</a>
+            <router-link :to="{ name: 'acercaDeMi' }">
+                <div class="menu__link">
+                    <fa class="link__icon" icon="fa-solid fa-user" />
+                    <a class="link__name">Acerca de mi</a>
+                </div>
             </router-link>
         </div>
         <div @click="openMenu" class="header__hamburguer">
@@ -110,13 +120,28 @@
         font-size: 1rem;
         color: var(--color-primary)
     }
+    a {
+        text-decoration: none;
+    }
    
     .menu__link {
-        text-decoration: none;
+        padding: 0.6rem 1rem;
         display: flex;
         align-items: center;
         position: relative;
         cursor: pointer;
+    }
+    .menu__link:hover {
+        background-color: var(--color-primary);
+        border-radius: 1rem;
+    }
+
+    .menu__link:hover .link__name {
+        color: black;
+    }
+
+    .menu__link:hover .link__icon {
+        color: black;
     }
 
     .menu-link-active {
@@ -126,8 +151,14 @@
         cursor: pointer;
     }
 
-    .active-link .link__name {
-        color: var(--color-highlight);
+    .active-link .menu__link {
+        background-color: var(--color-primary);
+        border-radius: 1rem;
+    }
+
+    .active-link .link__name,
+    .active-link .link__icon {
+        color: black;
     }
 
     .menu__link {
@@ -255,17 +286,7 @@
             display: block;
         }
     }
-    @media (max-width: 768px){
-        .header__menu {
-            display: none;
-        }
-        .link__icon-small {
-            display: block;
-        }
-        .link__icon-small-no-activate {
-            display: block;
-        }
-    }
+
     @media (max-width: 820px){
         .header__menu {
             display: none;

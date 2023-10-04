@@ -22,6 +22,7 @@ export default {
 :root {
   --color-primary: #FFF;
   --color-highlight: rgb(236 72 153/1);
+  --color-title: #FFF;
   --icon-size-primary: 3rem;
   --title: 3rem;
   --subtitle: 1rem;
@@ -51,6 +52,8 @@ body {
    margin: 1rem auto;
   }
 }
+
+
 body {
 }
 </style>

@@ -19,4 +19,10 @@
         margin: 0 auto;
         padding: 10rem 0;
     }
+
+    @media (max-width: 760px) {
+        .content {
+            padding: 5rem 0;
+        }
+    }
 </style>

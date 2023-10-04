@@ -55,7 +55,7 @@
         <div class="technology__certificates-container">
             <header>
                 <div class="technology__header">
-                    <fa class="link__icon technology__icon" icon="fa-solid fa-certificate" />
+                    <fa class="link__icon technology__cert" icon="fa-solid fa-certificate" />
                     <h1 class="technology__title">Certificaciones</h1>
                 </div>
             </header>
@@ -276,6 +276,10 @@ watch(currentPage, (newValue) => {
         color: var(--color-primary);
         font-size: var(--title-low);
     }
+    .technology__cert {
+        color: rgb(252 211 77);
+        font-size: var(--title-low);
+    }
     .content__header {
         padding-top: 32px;
     }
@@ -356,7 +360,7 @@ watch(currentPage, (newValue) => {
     }
     .technology__title {
         font-size: var(--title-low);
-        color: var(--color-highlight);
+        color: var(--color-title);
     }
 
     .technology-container {

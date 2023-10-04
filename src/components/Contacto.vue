@@ -90,7 +90,7 @@ export default {
 
     .input__area:focus {
         outline: none;
-        border-color: var(--color-highlight);
+        border-color: var(--color-title);
     }
     .input__box {
         padding: 7px 10px;
@@ -99,7 +99,7 @@ export default {
     
     .input__box:focus {
         outline: none;
-        border-color: var(--color-highlight);
+        border-color: var(--color-title);
     }
     .form__input {
         display: flex;
@@ -113,11 +113,11 @@ export default {
 
     .contact__title {
         font-size: var(--title-low);
-        color: var(--color-highlight);
+        color: var(--color-title);
     }
 
     .description__span {
-        color: var(--color-highlight);
+        color: var(--color-title);
         font-weight: bold;
     }
 
