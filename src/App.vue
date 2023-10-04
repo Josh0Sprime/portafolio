@@ -53,6 +53,5 @@ body {
   }
 }
 body {
-  overflow: hidden;
 }
 </style>

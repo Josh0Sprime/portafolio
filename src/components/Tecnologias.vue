@@ -373,7 +373,6 @@ watch(currentPage, (newValue) => {
 
     .technology {
         padding: 2rem 0;
-        max-height: 30rem;
         overflow-y: scroll;
         overflow-x: hidden;
         display: flex;
@@ -422,7 +421,7 @@ watch(currentPage, (newValue) => {
             opacity: 1;
         }
     }
-
+ 
     @media (max-width: 768px) {
         .technology__certificates-container {
             display: flex;
