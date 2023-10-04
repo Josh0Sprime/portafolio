@@ -41,8 +41,7 @@ body {
 }
 
 #app {
-  margin: 5rem auto;
-  max-width: 80rem;
+  margin: 0 auto;
   height: 10%;
   color: var(--color-primary);
 }

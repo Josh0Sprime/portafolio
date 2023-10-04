@@ -307,7 +307,6 @@ watch(currentPage, (newValue) => {
     }
     .content__container-image {
         opacity: 0.8;
-        position: relative;
         background-color: white;
         border-radius: 10px;
         display: flex;
@@ -372,7 +371,9 @@ watch(currentPage, (newValue) => {
     }
 
     .technology {
-        padding: 2rem 0;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 10rem 0;
         overflow-y: scroll;
         overflow-x: hidden;
         display: flex;

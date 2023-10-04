@@ -21,7 +21,6 @@
                 <fa class="link__icon" icon="fa-solid fa-user" />
                 <a class="link__name">Acerca de mi</a>
             </router-link>
-            <div class="header__menu-div"></div>
         </div>
         <div @click="openMenu" class="header__hamburguer">
             <fa ref="menuIcon" :class="!isMenuActivated ? 'link__icon-small-no-activate' : 'link__icon-small'" icon="fa-solid fa-bars" />
@@ -111,15 +110,6 @@
     .link__icon {
         font-size: 1rem;
         color: var(--color-primary)
-    }
-
-    .header__menu {
-        grid-area: menu;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        margin-bottom: 8rem;
-        gap: 3rem;
     }
    
     .menu__link {
@@ -223,8 +213,23 @@
         color: black;
         text-decoration: none;
     }
+    .header__menu {
+        max-width: 80rem;
+        grid-area: menu;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8rem;
+        background-color: red;
+        padding: 1rem 0;
+        width: 100%;
+        gap: 3rem;
+    }
     .header {
-        z-index: -1;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
     }
     .header__hamburguer {
         display: none;
