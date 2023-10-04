@@ -76,7 +76,6 @@
         transition: all 300ms ease-in-out;
         color: white;
     }
-
     .header__menu-no-active {
         display: none;
     }
@@ -218,23 +217,31 @@
         grid-area: menu;
         font-size: 1.5rem;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 8rem;
-        background-color: red;
-        padding: 1rem 0;
         width: 100%;
         gap: 3rem;
     }
     .header {
+        z-index: 1;
         display: flex;
         justify-content: center;
         position: fixed;
+        top: 0;
+        background-color: rgb(19, 21, 31);
+        height: 1%;
         width: 100%;
+        padding: 3rem 0 2rem 0;
     }
     .header__hamburguer {
         display: none;
         margin-bottom: 5rem;
-        width: fit-content;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        padding: 1.5rem;
+        margin-left: 2rem;
     }
 
     .header__menu-div {
@@ -247,9 +254,7 @@
         .header__menu {
             display: none;
         }
-        .header {
-            padding: 0 2rem;
-        }
+        
         .header__hamburguer {
             display: block;
         }

@@ -248,8 +248,7 @@ watch(currentPage, (newValue) => {
         width: fit-content;
         margin-top: 5rem;
         display: grid;
-        justify-content: center;
-        gap: 3rem 9rem;
+        gap: 3rem 10rem;
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .certificates__certificate {
@@ -363,6 +362,7 @@ watch(currentPage, (newValue) => {
     .technology-container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .content__title {
@@ -371,11 +371,7 @@ watch(currentPage, (newValue) => {
     }
 
     .technology {
-        max-width: 80rem;
-        margin: 0 auto;
-        padding: 10rem 0;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        z-index: -1;
         display: flex;
         flex-direction: column;
         gap: 15rem;
@@ -399,7 +395,7 @@ watch(currentPage, (newValue) => {
 
     @media (max-width: 760px) {
         .content__images {
-            gap: 2rem;
+            gap: 1.8rem;
         }
         .technology__header-container {
             margin-bottom: 5rem;

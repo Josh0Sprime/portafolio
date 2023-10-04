@@ -1,6 +1,8 @@
 <template>
     <Header />
-    <router-view></router-view>
+    <div class="content">
+        <router-view></router-view>
+    </div>
     <!-- <Tecnologias /> -->
     <!-- <Desarrolos /> -->
     <!-- <Contacto /> -->
@@ -11,6 +13,10 @@
     const Tecnologias = defineAsyncComponent(() => import("../components/Tecnologias.vue"));
     const Desarrolos = defineAsyncComponent(() => import("../components/Desarrollos.vue"));
 </script>
-<style>
-    
+<style scoped>
+    .content {
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 10rem 0;
+    }
 </style>

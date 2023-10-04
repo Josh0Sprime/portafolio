@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="desarrollo">
         <h1>Desarrollos</h1>
     </div>
 </template>
@@ -8,6 +8,5 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style scoped>
 </style>

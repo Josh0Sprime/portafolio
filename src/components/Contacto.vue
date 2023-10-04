@@ -127,10 +127,8 @@ export default {
         margin-top: 2rem;
     }
     .contact {
-        padding: 2rem 0;
         display: flex;
-        color: white;
-        justify-content: space-between;
+        gap: 15rem;
     }
 
     .contact__icon {
@@ -139,12 +137,6 @@ export default {
     .description__content {
         margin-top: 1rem;
         font-size: 1rem;
-    }
-
-    .contact {
-        max-height: 30rem;
-        overflow-y: scroll;
-        overflow-x: hidden;
     }
 
     @media (max-width: 760px) {
