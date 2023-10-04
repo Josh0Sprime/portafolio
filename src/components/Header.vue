@@ -3,7 +3,7 @@
         <div class="header__menu">
             <router-link :to="{ name: 'inicio' }" class="menu__link">
                 <fa class="link__icon" icon="fa-solid fa-home" />
-                <a class="link__name">Inicio</a>
+                <a class="link__name">Inicio</a>    
             </router-link>
             <router-link :to="{ name: 'tecnologias' }" class="menu__link">
                 <fa class="link__icon" icon="fa-solid fa-code" />
@@ -126,16 +126,12 @@
         cursor: pointer;
     }
 
-    .active-link {
-        text-decoration: underline;
+    .active-link .link__name {
         color: var(--color-highlight);
     }
 
-    .menu__link:hover:after {
-        width: 100%;
-    }
-    .menu__link:hover {
-        opacity: 1;
+    .menu__link {
+        font-size: 1rem;
     }
     
     .user-info__content-image {
@@ -229,10 +225,10 @@
         justify-content: center;
         position: fixed;
         top: 0;
-        background-color: rgb(19, 21, 31);
+        background-color: rgb(30 41 59);
         height: 1%;
         width: 100%;
-        padding: 3rem 0 2rem 0;
+        padding: 2rem 0 1.5rem 0;
     }
     .header__hamburguer {
         display: none;
@@ -240,7 +236,7 @@
         width: 100%;
         position: fixed;
         top: 0;
-        padding: 1.5rem;
+        padding: 0.8rem;
         margin-left: 2rem;
     }
 
