@@ -100,6 +100,7 @@
         text-wrap: nowrap;
     }
     .link__icon-small {
+        cursor: pointer;
         display: none;
         font-size: 1.5rem;
         background-color: var(--color-highlight);
@@ -115,6 +116,7 @@
         padding: 0.5rem 0.8rem;
         border-radius: 20%;
         color: var(--color-primary);
+        cursor: pointer;
     }
     .link__icon {
         font-size: 1rem;

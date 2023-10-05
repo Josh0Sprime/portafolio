@@ -407,12 +407,10 @@ watch(currentPage, (newValue) => {
         .technology__certificates-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
         .technology__study-container {
            display: flex;
            flex-direction: column;
-           align-items: center;
         }
         .certificates-container__certificates {
             grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -427,14 +425,13 @@ watch(currentPage, (newValue) => {
         .technology__certificates-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+        }
+        .technology {
+            padding: 0 2rem;
         }
         .technology-container {
             display: flex;
             flex-direction: column;
-        }
-        .technology__header-container {
-            padding: 0 2rem;
         }
         .certificates-container__certificates {
             grid-template-columns: repeat(1, minmax(0, 1fr));
