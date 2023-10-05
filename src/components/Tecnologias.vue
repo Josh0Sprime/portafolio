@@ -107,7 +107,7 @@ const incrementPage = () => {
 }
 
 const isLoading = ref(false);
-
+window.scroll({top: 0})
 const pages = ref([
     {
         img: vueImg,
@@ -453,13 +453,23 @@ watch(currentPage, (newValue) => {
         }
         
     }
-    @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
         .technology {
             padding: 0 2rem;
         }
+        .content__images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .technology-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            align-items: baseline;
+        }
         .certificates-container__certificates {
             display: flex;
-            gap: 3rem 0;
+            gap: 3rem 1rem;
             flex-wrap: wrap;
             justify-content: space-between;
         }   

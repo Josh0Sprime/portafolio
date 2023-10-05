@@ -2,11 +2,9 @@
    <div class="inicio">
         <h1 class="inicio__user-info__title">Hola!</h1>
         <h2 class="user-info__description">Mi nombre es <span class="user-info__user-name">Jorge</span>, desarrollador full-stack apasionado por la programacion.</h2>
-        <router-link :to="{ name: 'acercaDeMi' }">
-            <a class="user-content__buttons">
-                Conoceme mas!
-            </a>
-        </router-link>
+        <div class="user-content__buttons">
+            <router-link class="content__buttons-route" :to="{ name: 'acercaDeMi' }">Conoce mas de mi!</router-link>
+        </div>
         <section class="inicio__make">
             <header>
                 <h3 class="make__title">Este sitio web fue desarrollado con</h3>
@@ -35,11 +33,26 @@
     </div>
 </template>
 <script setup>
+window.scroll({top: 0})
+
 </script>
 <style scoped>
     .inicio__user-info__title {
         font-size: 5rem;
         color: var(--color-highlight);
+    }
+    .content__buttons-route {
+        width: fit-content;
+        color: white;
+        display: block;
+        background-color: var(--color-highlight);
+        padding: 1rem 2rem;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
     }
     .prog__container {
         display: flex;
@@ -78,21 +91,7 @@
     .inicio__make {
         margin-top: 5rem;
     }
-    .user-content__buttons {
-        width: fit-content;
-        display: block;
-        background-color: var(--color-highlight);
-        padding: 1rem 2rem;
-        margin-top: 3rem;
-        border-radius: 1rem;
-        color: white;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 300ms ease-in-out;
-    }
-    .user-content__buttons:hover {
+    .content__buttons-route:hover {
         background-color: rgb(219 39 119/1);
     }
 
@@ -103,7 +102,7 @@
         line-height: 1;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 767px) {
         .user-info__title {
             font-size: 3rem;
         }
@@ -119,7 +118,32 @@
         .inicio {
             padding: 0 2rem;
         }
-        .user-content__buttons {
+        .content__buttons-route {
+            padding: 0.8rem;
+        }
+        .header__user-info {
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+        .user-info__title {
+            font-size: 3rem;
+        }
+        .user-info__description {
+            font-size: 2rem;
+        }
+        .make__prog {
+            gap: 2rem;
+        }
+        .prog__img {
+            width: 3rem;
+        }
+        .inicio {
+            padding: 0 2rem;
+        }
+        .content__buttons-route {
             padding: 0.8rem;
         }
         .header__user-info {

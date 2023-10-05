@@ -9,6 +9,7 @@
                     </div>
                     <div>
                         <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
+                        <p class="me__year">jorgecf.9830@outlook.cl</p>
                         <p class="me__year">23 años</p>
                         <a :href="cv" download class="user-content__buttons">
                             Descargar CV
@@ -63,6 +64,8 @@
 </template>
 <script setup>
   import cv from "../assets/files/CV.pdf"
+  window.scroll({top: 0})
+
 </script>
 <style scoped>
     .me__name {
@@ -238,10 +241,18 @@
        
     }
 
-    @media (max-width: 1180px) {
+    @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
         .about {
             padding: 0 2rem;
             gap: 5rem;
         }
     }
+
+    @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+        .about {
+            padding: 0 2rem;
+            gap: 5rem;
+        }
+    }
+    
 </style>

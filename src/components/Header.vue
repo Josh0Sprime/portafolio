@@ -19,12 +19,6 @@
                     <a class="link__name">Desarrollos</a>
                 </div>
             </router-link>
-            <router-link :to="{ name: 'contacto' }">
-                <div class="menu__link">
-                    <fa class="link__icon" icon="fa-solid fa-address-book" />
-                    <a class="link__name">Contacto</a>
-                </div>
-            </router-link>
             <router-link :to="{ name: 'acercaDeMi' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-user" />
@@ -46,10 +40,6 @@
                 <router-link :to="{ name: 'desarrollos' }" class="menu__link-phone">
                     <fa class="link__icon-phone" icon="fa-solid fa-briefcase" />
                     <a class="link__name-small">Desarrollos</a>
-                </router-link>
-                <router-link :to="{ name: 'contacto' }" class="menu__link-phone">
-                    <fa class="link__icon-phone" icon="fa-solid fa-address-book" />
-                    <a class="link__name-small">Contacto</a>
                 </router-link>
                 <router-link :to="{ name: 'acercaDeMi' }" class="menu__link-phone">
                     <fa class="link__icon-phone" icon="fa-solid fa-user" />

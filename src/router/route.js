@@ -22,12 +22,6 @@ const routes = [
         name: "desarrollos"
     },
     {
-        path: "/contacto",
-        component: () => import("../components/Contacto.vue"),
-        name: "contacto"
-        
-    },
-    {
         path: "/acerca-de-mi",
         component: () => import("../components/AcercaDeMi.vue"),
         name: "acercaDeMi"
