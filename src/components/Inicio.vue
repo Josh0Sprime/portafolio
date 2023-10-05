@@ -25,6 +25,9 @@
                 <div class="prog__container">
                     <img src="../assets/img/github.png" class="prog__img" alt="">
                 </div>
+                <div class="prog__container">
+                    <img src="../assets/img/node.png" class="prog__img" alt="">
+                </div>
             </div>
         </section>
     </div>
