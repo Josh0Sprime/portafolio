@@ -187,17 +187,15 @@
         width: 107%;
         height: 107%;
         border-radius: 100%;
+        animation: rotation 20s linear infinite;
     }
     .me__image-primary-container::after {
         filter: blur(3.5rem);
     }
-    .me__image-primary-container::after {
-        animation: rotation 20s linear infinite;
-    }
 
     @keyframes rotation {
-        0% { transform: rotate(0)}
-        100% { transform: rotate(360deg); }
+        0% { --gradient-angle: 0deg}
+        100% { --gradient-angle: 360deg}
     }
 
     a {
