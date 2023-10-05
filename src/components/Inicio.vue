@@ -2,9 +2,11 @@
    <div class="inicio">
         <h1 class="inicio__user-info__title">Hola!</h1>
         <h2 class="user-info__description">Mi nombre es <span class="user-info__user-name">Jorge</span>, desarrollador full-stack apasionado por la programacion.</h2>
-        <a :href="cv" download class="user-content__buttons">
-            Descargar CV
-        </a>
+        <router-link :to="{ name: 'acercaDeMi' }">
+            <a class="user-content__buttons">
+                Conoceme mas!
+            </a>
+        </router-link>
         <section class="inicio__make">
             <header>
                 <h3 class="make__title">Este sitio web fue desarrollado con</h3>
@@ -33,7 +35,6 @@
     </div>
 </template>
 <script setup>
-  import cv from "../assets/files/CV.pdf"
 </script>
 <style scoped>
     .inicio__user-info__title {
@@ -126,5 +127,8 @@
             display: flex;
             justify-content: center;
         }
+    }
+    a {
+        text-decoration: none;
     }
 </style>

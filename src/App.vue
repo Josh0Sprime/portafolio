@@ -28,6 +28,11 @@ export default {
   --subtitle: 1rem;
   --subtitle-cert: 1.5rem;
   --title-low: 2rem;
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0e4b50;
+  --clr-4: #2d8f85;
+  --clr-5: #637c54;
 }
 * {
   margin: 0;

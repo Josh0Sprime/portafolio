@@ -4,10 +4,15 @@
             <div class="me__container">                
                 <h1 class="me__title">Informacion personal</h1>
                 <div class="me__info-container">
-                    <div class="me__image-container"></div>
+                    <div class="me__image-primary-container">
+                        <div class="me__image-container"></div>
+                    </div>
                     <div>
                         <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
                         <p class="me__year">23 años</p>
+                        <a :href="cv" download class="user-content__buttons">
+                            Descargar CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -56,10 +61,8 @@
         </section>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+  import cv from "../assets/files/CV.pdf"
 </script>
 <style scoped>
     .me__name {
@@ -84,16 +87,6 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 5rem;
-    }
-    .me__image-container {
-        border: 2px solid white;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 10rem;
-        background-size: contain;
-        overflow: hidden;   
-        background-image: url("../assets/img/me.jpg");
-        background-repeat: no-repeat;
     }
     .item__date {
         font-size: 1rem;
@@ -142,6 +135,73 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+    .user-content__buttons {
+        display: block;
+        width: fit-content;
+        background-color: var(--color-highlight);
+        font-size: 1rem;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        color: var(--color-primary);
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    /* .me__image-container {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 100%;
+        background-size: contain;
+        overflow: hidden;   
+        background-image: url("../assets/img/me.jpg");
+        background-repeat: no-repeat;
+    } */
+    .me__image-primary-container {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        background-image: url("../assets/img/me.jpg");
+        background-size: contain;
+        border-radius: 100%;
+    }
+
+    @property --gradient-angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .me__image-primary-container::after,
+    .me__image-primary-container::before {
+        z-index: -1;
+        content: "";
+        inset: -.5rem;
+        position: absolute;
+        background: conic-gradient(
+            from var(--gradient-angle),
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-4),
+            var(--clr-3)
+        );
+        width: 107%;
+        height: 107%;
+        border-radius: 100%;
+    }
+    .me__image-primary-container::after {
+        filter: blur(3.5rem);
+    }
+    .me__image-primary-container::after {
+        animation: rotation 20s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% { transform: rotate(0)}
+        100% { transform: rotate(360deg); }
+    }
+
+    a {
+        text-decoration: none;
     }
     .me__year {
         font-size: 1.5rem;
