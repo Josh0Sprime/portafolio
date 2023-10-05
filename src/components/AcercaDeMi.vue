@@ -1,11 +1,57 @@
 <template lang="">
     <div class="about">
+        <section class="about__me">
+            <div class="me__container">                
+                <h1 class="me__title">Informacion personal</h1>
+                <div class="me__info-container">
+                    <div class="me__image-container"></div>
+                    <div>
+                        <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
+                        <p class="me__year">23 años</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="about__study">
             <header class="study__header">
                 <h1 class="study__title">Estudios</h1>
             </header>
             <div class="study__container">
-                
+                <div class="study__content">
+                    <div class="study__item">
+                        <div class="item__divider">
+                            <div class="study__circle"></div>
+                            <div class="study__divider"></div>
+                        </div>
+                        <div>                            
+                            <p class="item__date">Octubre de 2023 - Actual</p>
+                            <h3 class="item__study">Ingenieria Informatica</h3>
+                            <p class="item__place">Instituto IACC</p>
+                        </div>  
+                    </div>
+                    <div class="study__item">
+                        <div class="item__divider">
+                            <div class="study__circle"></div>
+                            <div class="study__divider"></div>
+                        </div>
+                        <div>                            
+                            <p class="item__date">Mayo de 2023 - Actual</p>
+                            <h3 class="item__study">Diplomado desarrollo web</h3>
+                            <p class="item__place">Pontificia Universidad Catolica de Chile</p>
+                        </div>
+                    </div>
+                    <div class="study__item">
+                        <div class="item__divider">
+                            <div class="study__circle"></div>
+                            <div class="study__divider"></div>
+                        </div>
+                        <div>                   
+                            <p class="item__date">2020 de mayo - 2022 de diciembre</p>
+                            <h3 class="item__study">Analista programador</h3>
+                            <p class="item__place">Instituto Profesional Santo Tomas</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -16,5 +62,120 @@ export default {
 }
 </script>
 <style scoped>
-    
+    .me__name {
+        font-size: var(--title-low);
+    }
+    .about__study {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .me__image {
+        width: 20rem;
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item__place {
+        font-size: 1.5rem;
+    }
+    .me__container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .me__image-container {
+        border: 2px solid white;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 10rem;
+        background-size: contain;
+        overflow: hidden;   
+        background-image: url("../assets/img/me.jpg");
+        background-repeat: no-repeat;
+    }
+    .item__date {
+        font-size: 1rem;
+    }
+    .study__title {
+        font-size: var(--title-low);
+    }
+    .item__study {
+        color: var(--color-highlight);
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .study__item {
+        display: flex;
+        align-items: baseline;
+        gap: 5rem;
+    }
+    .me__title {
+        font-size: var(--title-low);
+    }
+    .study__divider {
+        width: 1px;
+        height: 9rem;
+        background-color: white;
+    }
+    .item__divider {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .study__circle {
+        background-color: var(--color-primary);
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 100%;
+    }
+    .study__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .study__container {
+        display: flex;
+    }
+    .me__info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .me__year {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 760px) {
+        .about {
+            padding: 0 2rem;
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .item__study {
+            font-size: 1.2rem;
+            text-wrap: nowrap;
+        }
+        .item__place {
+            font-size: 1rem;
+        }
+        .study__item {
+            gap: 2rem;
+        }
+        .me__image-container {
+            width: 10rem;
+            height: 10rem;
+        }
+        .me__name {
+            font-size: 1.5rem;
+        }
+        .me__year {
+            font-size: 1rem;
+        }
+
+        .me__container {
+            gap: 3rem;
+        }
+       
+    }
 </style>
