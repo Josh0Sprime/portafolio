@@ -123,6 +123,8 @@
         }
         .header__user-info {
             padding: 0 2rem;
+            display: flex;
+            justify-content: center;
         }
     }
 </style>

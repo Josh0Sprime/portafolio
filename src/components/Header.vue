@@ -279,7 +279,7 @@
         height: 1px;
     }
 
-    @media (max-width: 760px) {
+    /* @media (max-width: 760px) {
         .header__menu {
             display: none;
         }
@@ -287,9 +287,9 @@
         .header__hamburguer {
             display: block;
         }
-    }
+    } */
 
-    @media (max-width: 820px){
+    @media (max-width: 866px){
         .header__menu {
             display: none;
         }
@@ -299,5 +299,24 @@
         .link__icon-small-no-activate {
             display: block;
         }
+        .header__hamburguer {
+            display: block;
+        }
     }
+
+    @media (max-width: 1024px){
+        .header__menu {
+            display: none;
+        }
+        .link__icon-small {
+            display: block;
+        }
+        .link__icon-small-no-activate {
+            display: block;
+        }
+        .header__hamburguer {
+            display: block;
+        }
+    }
+    
 </style>

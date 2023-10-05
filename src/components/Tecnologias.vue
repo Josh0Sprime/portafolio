@@ -396,50 +396,72 @@ watch(currentPage, (newValue) => {
         align-items: center;
         gap: 1rem;
     }
-
-    @media (max-width: 760px) {
-        .content__images {
-            gap: 1.8rem;
+ 
+    @media(max-width: 767px) {
+        
+        .technology-container {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 5rem;
         }
-        .technology__header-container {
-            margin-bottom: 5rem;
+        .technology {
+            padding: 0 2rem;
+            display: flex;
+            justify-content: center;
+        }
+        .content__images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+      
+      
+        .certificates-container__certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3rem 0;
         }
         .technology__certificates-container {
             display: flex;
             flex-direction: column;
-        }
-        .technology__study-container {
-           display: flex;
-           flex-direction: column;
-        }
-        .certificates-container__certificates {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 3rem 9rem;
-        }
-        .certificate__image {
-            opacity: 1;
         }
     }
- 
-    @media (max-width: 768px) {
-        .technology__certificates-container {
+
+    @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+        .technology-container {
             display: flex;
             flex-direction: column;
+            gap: 5rem;
+        }
+        .content__images {
+            display: flex;
+            flex-wrap: wrap;
         }
         .technology {
             padding: 0 2rem;
         }
-        .technology-container {
+        .certificates-container__certificates {
             display: flex;
-            flex-direction: column;
+            gap: 3rem 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container-image__image {
+            width: 70px;
+        }
+        
+    }
+    @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+        .technology {
+            padding: 0 2rem;
         }
         .certificates-container__certificates {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 3rem 9rem;
-        }
-        .certificate__image {
-            opacity: 1;
-        }
+            display: flex;
+            gap: 3rem 0;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }   
     }
   
 </style>

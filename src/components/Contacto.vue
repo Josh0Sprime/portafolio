@@ -139,9 +139,11 @@ export default {
         font-size: 1rem;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 912px) {
         .contact {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
             padding: 0 2rem;
         }
     }

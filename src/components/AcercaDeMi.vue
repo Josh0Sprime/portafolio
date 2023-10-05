@@ -150,6 +150,7 @@ export default {
         .about {
             padding: 0 2rem;
             flex-direction: column;
+            align-items: center;
             gap: 5rem;
         }
         .item__study {
@@ -177,5 +178,12 @@ export default {
             gap: 3rem;
         }
        
+    }
+
+    @media (max-width: 1180px) {
+        .about {
+            padding: 0 2rem;
+            gap: 5rem;
+        }
     }
 </style>
