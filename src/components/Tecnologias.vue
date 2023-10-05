@@ -413,6 +413,7 @@ watch(currentPage, (newValue) => {
         .content__images {
             display: flex;
             flex-wrap: wrap;
+            gap: 1rem;
         }
       
       
