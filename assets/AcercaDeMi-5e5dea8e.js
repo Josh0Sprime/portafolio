@@ -1,1 +1,0 @@
-import{_ as e,o as t,c,e as s}from"./index-7a71ed82.js";const o={},a={class:"about"},_=s("section",{class:"about__study"},[s("header",{class:"study__header"},[s("h1",{class:"study__title"},"Estudios")]),s("div",{class:"study__container"})],-1),d=[_];function n(r,i,u,l,p,h){return t(),c("div",a,d)}const m=e(o,[["render",n]]);export{m as default};
