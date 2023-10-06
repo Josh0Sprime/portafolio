@@ -273,8 +273,9 @@ watch(currentPage, (newValue) => {
         transform: scale(1.1);
     }
     .technology__icon {
-        color: var(--color-primary);
+        color: var(--color-highlight);
         font-size: var(--title-low);
+        
     }
     .technology__cert {
         color: rgb(252 211 77);

@@ -1,7 +1,7 @@
 <template lang="">
    <div class="inicio">
         <h1 class="inicio__user-info__title">Hola!</h1>
-        <h2 class="user-info__description">Mi nombre es <span class="user-info__user-name">Jorge</span>, desarrollador full-stack apasionado por la programacion.</h2>
+        <h2 class="user-info__description">Mi nombre es Jorge, desarrollador full-stack <span class="user-info__important">apasionado  </span>por la programacion.</h2>
         <div class="user-content__buttons">
             <router-link class="content__buttons-route" :to="{ name: 'acercaDeMi' }">Conoce mas de mi!</router-link>
         </div>
@@ -41,11 +41,15 @@ window.scroll({top: 0})
         font-size: 5rem;
         color: var(--color-highlight);
     }
+    .user-info__important {
+        color: var(--color-highlight);
+        font-size: 3.8rem;
+    }
     .content__buttons-route {
         width: fit-content;
         color: white;
         display: block;
-        background-color: var(--color-highlight);
+        background-color: var(--color-highlight);   
         padding: 1rem 2rem;
         margin-top: 3rem;
         border-radius: 1rem;
@@ -92,7 +96,7 @@ window.scroll({top: 0})
         margin-top: 5rem;
     }
     .content__buttons-route:hover {
-        background-color: rgb(219 39 119/1);
+        background-color: rgb(66, 173, 157);
     }
 
     .user-info__description {

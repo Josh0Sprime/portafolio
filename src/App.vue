@@ -21,7 +21,7 @@ export default {
 }
 :root {
   --color-primary: #FFF;
-  --color-highlight: rgb(236 72 153/1);
+  --color-highlight: rgb(94 234 212);
   --color-title: #FFF;
   --icon-size-primary: 3rem;
   --title: 3rem;

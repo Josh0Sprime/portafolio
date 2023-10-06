@@ -150,6 +150,9 @@
         margin-top: 1rem;
         font-weight: bold;
     }
+    .user-content__buttons:hover {
+        background-color: rgb(66, 173, 157);
+    }
     /* .me__image-container {
         width: 15rem;
         height: 15rem;
