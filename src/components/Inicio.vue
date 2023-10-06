@@ -41,6 +41,17 @@ window.scroll({top: 0})
         font-size: 5rem;
         color: var(--color-highlight);
     }
+    .inicio {
+        opacity: 0;
+        animation: mostrar-inicio forwards 1s;
+        animation-delay: 100ms;
+    }
+
+    @keyframes mostrar-inicio {
+        100% {
+            opacity: 1;
+        }
+    }
     .user-info__important {
         color: var(--color-highlight);
         font-size: 3.8rem;

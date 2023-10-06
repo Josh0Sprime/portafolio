@@ -29,7 +29,7 @@
                             <div class="study__circle"></div>
                             <div class="study__divider"></div>
                         </div>
-                        <div>                            
+                        <div class="study__info">                            
                             <p class="item__date">Octubre de 2023 - Actual</p>
                             <h3 class="item__study">Ingenieria Informatica</h3>
                             <p class="item__place">Instituto IACC</p>
@@ -40,7 +40,7 @@
                             <div class="study__circle"></div>
                             <div class="study__divider"></div>
                         </div>
-                        <div>                            
+                        <div class="study__info-2">                            
                             <p class="item__date">Mayo de 2023 - Actual</p>
                             <h3 class="item__study">Diplomado desarrollo web</h3>
                             <p class="item__place">Pontificia Universidad Catolica de Chile</p>
@@ -51,7 +51,7 @@
                             <div class="study__circle"></div>
                             <div class="study__divider"></div>
                         </div>
-                        <div>                   
+                        <div class="study__info-3">                   
                             <p class="item__date">2020 de mayo - 2022 de diciembre</p>
                             <h3 class="item__study">Analista programador</h3>
                             <p class="item__place">Instituto Profesional Santo Tomas</p>
@@ -64,10 +64,55 @@
 </template>
 <script setup>
   import cv from "../assets/files/CV.pdf"
-  window.scroll({top: 0})
+  window.scroll({top: 0});
+
+
 
 </script>
 <style scoped>
+
+    .about {
+        opacity: 0;
+        animation: mostrar-about forwards 1s;
+        animation-delay: 100ms;
+    }
+
+    @keyframes mostrar-about {
+        100% {
+            opacity: 1;
+        }
+    }
+    .study__info {
+        position: relative;
+        left: 30%;
+        animation: volver-informacion forwards 1000ms;
+        animation-delay: 0.3s;
+        opacity: 0;
+    }
+
+    .study__info-2 {
+        position: relative;
+        left: 30%;
+        animation: volver-informacion forwards  1000ms;
+        animation-delay: 0.5s;
+        opacity: 0;
+    }
+
+    .study__info-3 {
+        position: relative;
+        left: 30%;
+        animation: volver-informacion forwards  1000ms;
+        animation-delay: 0.7s;
+        opacity: 0;
+    }
+
+    @keyframes volver-informacion {
+       
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
     .me__name {
         font-size: var(--title-low);
     }

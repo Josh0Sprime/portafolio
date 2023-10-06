@@ -160,6 +160,17 @@ watch(currentPage, (newValue) => {
 </script>
 <style scoped>
 
+.technology {
+    opacity: 0;
+    animation: mostrar-technology forwards 1s;
+    animation-delay: 100ms;
+}
+
+@keyframes mostrar-technology {
+    100% {
+        opacity: 1;
+    }
+}
 .loading {
     display: flex;
     justify-content: center;
