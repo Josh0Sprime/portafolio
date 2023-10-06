@@ -33,6 +33,8 @@ export default {
   --clr-3: #0e4b50;
   --clr-4: #2d8f85;
   --clr-5: #637c54;
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
 }
 * {
   margin: 0;

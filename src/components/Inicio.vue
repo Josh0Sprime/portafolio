@@ -46,17 +46,64 @@ window.scroll({top: 0})
         font-size: 3.8rem;
     }
     .content__buttons-route {
-        width: fit-content;
-        color: white;
+        margin-top: 5rem;
+        position: relative;
+        font-size: 1.5rem;
         display: block;
-        background-color: var(--color-highlight);   
-        padding: 1rem 2rem;
-        margin-top: 3rem;
-        border-radius: 1rem;
-        font-size: 1rem;
-        font-weight: bold;
         cursor: pointer;
-        transition: all 300ms ease-in-out;
+        width: fit-content;
+        text-decoration: none;
+        color: var(--color-highlight);
+        border: var(--color-highlight) 0.125em solid;
+        padding: 0.25em 1em;
+        border-radius: 0.25em;
+        text-shadow:
+        0 0 0.125em hsl(0 0% 100% / 0.5),
+        0 0 0.45em currentColor;
+        box-shadow: inset 0 0 0.5rem 0 var(--color-highlight), 0 0 0.5rem 0 var(--color-highlight);
+       
+    }
+    
+    .content__buttons-route::before {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        background: var(--color-highlight);
+        top: 120%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        transform: perspective(1em) 
+        rotateX(40deg) scale(1, 0.35) translateZ(-1rem);
+        filter: blur(1.5em);
+        opacity: 0.7;
+    }
+    .content__buttons-route:hover,
+    .content__buttons-route:focus {
+        color: var(--color-primary);
+        text-shadow: none;
+    }
+    .content__buttons-route::after{
+        transition: opacity 100ms linear;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 2em 0.5em var(--color-highlight);
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--color-highlight);
+    }
+    .content__buttons-route:hover::after,
+    .content__buttons-route:focus::after{
+        opacity: 1;
+    }
+    .content__buttons-route:hover::before,
+    .content__buttons-route:focus::before {
+        opacity: 1;
     }
     .prog__container {
         display: flex;
@@ -68,7 +115,7 @@ window.scroll({top: 0})
         width: fit-content;
         opacity: 0.7;
         transition: all 300ms ease-in-out;
-        filter: grayscale(100%)
+        filter: blue(100%)
     }
     .prog__container:hover {
         opacity: 1;
@@ -94,9 +141,6 @@ window.scroll({top: 0})
     }
     .inicio__make {
         margin-top: 5rem;
-    }
-    .content__buttons-route:hover {
-        background-color: rgb(66, 173, 157);
     }
 
     .user-info__description {
