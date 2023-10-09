@@ -162,6 +162,9 @@ window.scroll({top: 0})
     }
 
     @media (max-width: 767px) {
+        .user-info__important {
+            font-size: 2.5rem;
+        }
         .user-info__title {
             font-size: 3rem;
         }

@@ -2,7 +2,7 @@
     <div class="about">
         <section class="about__me">
             <div class="me__container">                
-                <h1 class="me__title">Informacion personal</h1>
+                <h1 class="me__title">Personal</h1>
                 <div class="me__info-container">
                     <div class="me__image-primary-container">
                         <div class="me__image-container"></div>
@@ -212,7 +212,8 @@
         width: 15rem;
         height: 15rem;
         background-image: url("../assets/img/me.jpg");
-        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 100%;
     }
 
@@ -256,6 +257,29 @@
         font-size: 1.5rem;
     }
     @media (max-width: 760px) {
+        .user-content__buttons {
+            padding: 1rem;
+            font-size: 0.8rem !important;
+        }
+        .me__image-primary-container::before {
+            content: "";
+            inset: -.2rem;
+        }
+        .me__title {
+            font-size: 2rem !important;
+            flex-wrap: nowrap;
+        }
+        .me__name {
+            font-size: 1rem !important;
+        }
+        .me__info-container{
+            flex-direction: row;
+            align-items: center;
+        }
+        .me__image-primary-container {
+            width: 7rem;
+            height: 7rem;
+        }
         .about {
             padding: 0 2rem;
             flex-direction: column;

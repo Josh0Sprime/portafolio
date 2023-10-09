@@ -122,10 +122,11 @@
         align-items: center;
         position: relative;
         cursor: pointer;
+        transition: all 300ms ease-in-out;
+        border-radius: 1rem;
     }
     .menu__link:hover {
         background-color: var(--color-primary);
-        border-radius: 1rem;
     }
 
     .menu__link:hover .link__name {
