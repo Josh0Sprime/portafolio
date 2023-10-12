@@ -1,1 +1,0 @@
-import{o,c as e,e as s}from"./index-62dc2e94.js";const t={class:"desarrollo"},r=s("h1",null,"Desarrollos",-1),a=[r],d={__name:"Desarrollos",setup(c){return window.scroll({top:0}),(l,_)=>(o(),e("div",t,a))}};export{d as default};
