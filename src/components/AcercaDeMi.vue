@@ -9,6 +9,10 @@
                     </div>
                     <div>
                         <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
+                        <div class="me__country-container">
+                            <img class="me__country-image" src="../assets/img/cl.png" alt="">
+                            <p class="me__year">Chileno</p>
+                        </div>
                         <p class="me__year">jorgecf.9830@outlook.cl</p>
                         <p class="me__year">23 años</p>
                         <a :href="cv" download class="user-content__buttons">
@@ -30,7 +34,12 @@
                             <div class="study__divider"></div>
                         </div>
                         <div class="study__info">                            
-                            <p class="item__date">Octubre de 2023 - Actual</p>
+                            <span class="study__container-date">
+                                    <p class="item__date">Mayo de 2023</p>
+                                    <p>-</p>
+                                    <p class="item__date"> Actual </p>
+                                    <img class="study__date-image" src="../assets/img/pending.svg" alt="">
+                            </span>
                             <h3 class="item__study">Ingenieria Informatica</h3>
                             <p class="item__place">Instituto IACC</p>
                         </div>  
@@ -41,7 +50,12 @@
                             <div class="study__divider"></div>
                         </div>
                         <div class="study__info-2">                            
-                            <p class="item__date">Mayo de 2023 - Actual</p>
+                            <span class="study__container-date">
+                                    <p class="item__date">Mayo de 2023</p>
+                                    <p>-</p>
+                                    <p class="item__date"> Actual </p>
+                                    <img class="study__date-image" src="../assets/img/pending.svg" alt="">
+                            </span>
                             <h3 class="item__study">Diplomado desarrollo web</h3>
                             <p class="item__place">Pontificia Universidad Catolica de Chile</p>
                         </div>
@@ -52,7 +66,12 @@
                             <div class="study__divider"></div>
                         </div>
                         <div class="study__info-3">                   
-                            <p class="item__date">2020 de mayo - 2022 de diciembre</p>
+                            <span class="study__container-date">
+                                <p class="item__date">Mayo de 2023</p>
+                                <p>-</p>
+                                <p class="item__date">diciembre de 2022 </p>
+                                <img class="study__date-image" src="../assets/img/complete.svg" alt="">
+                            </span>
                             <h3 class="item__study">Analista programador</h3>
                             <p class="item__place">Instituto Profesional Santo Tomas</p>
                         </div>
@@ -70,7 +89,22 @@
 
 </script>
 <style scoped>
-
+    .study__container-date {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .study__date-image {
+        width: 1.5rem;
+    }
+    .me__country-image {
+        width: 2rem;
+    }
+    .me__country-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
     .about {
         opacity: 0;
         animation: mostrar-about forwards 1s;
@@ -143,7 +177,6 @@
         font-size: var(--title-low);
     }
     .item__study {
-        color: var(--color-highlight);
         margin-top: 1rem;
         font-size: 2rem;
     }
@@ -170,6 +203,17 @@
         background-color: var(--color-primary);
         width: 0.7rem;
         height: 0.7rem;
+        border-radius: 100%;
+        position: relative;
+    }
+    .study__circle::after {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        top: 2px;
+        left: 2.3px;
+        background-color: var(--color-highlight);
         border-radius: 100%;
     }
     .study__content {

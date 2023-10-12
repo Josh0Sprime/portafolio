@@ -4,9 +4,7 @@
             <h1 class="development__title">Desarrollos</h1>
             <p class="development__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, laborum.</p>
         </header>
-        <section class="development__list">
-            
-        </section>
+        
     </div>
 </template>
 <script setup>
@@ -19,8 +17,6 @@ window.scroll({top: 0})
     animation: mostrar-inicio forwards 1s;
     animation-delay: 100ms;
 }
-
-
 
 @keyframes mostrar-inicio {
     100% {

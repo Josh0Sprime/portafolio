@@ -4,25 +4,25 @@
             <router-link :to="{ name: 'inicio' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-home" />
-                    <a class="link__name">Inicio</a>    
+                    <a class="link__name">{{ menuLanguage[userLanguage].inicio }}</a>    
                 </div>
             </router-link>
             <router-link :to="{ name: 'tecnologias' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-code" />
-                    <a class="link__name">Tecnologias</a>
+                    <a class="link__name">{{ menuLanguage[userLanguage].tecnologias }}</a>
                 </div>
             </router-link>
             <router-link :to="{ name: 'desarrollos' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-briefcase" />
-                    <a class="link__name">Desarrollos</a>
+                    <a class="link__name">{{ menuLanguage[userLanguage].desarrollos }}</a>
                 </div>
             </router-link>
             <router-link :to="{ name: 'acercaDeMi' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-user" />
-                    <a class="link__name">Acerca de mi</a>
+                    <a class="link__name">{{ menuLanguage[userLanguage].acercaDeMi }}</a>
                 </div>
             </router-link>
         </div>
@@ -51,11 +51,25 @@
 </template>
 <script setup>
     import { ref } from 'vue'
-
+    const userLanguage = window.navigator.language;
     const variable = ref(null);
     const menuIcon = ref(null)
 
     const isMenuActivated = ref(false);
+    const menuLanguage = {
+        es: {
+            inicio: "inicio",
+            tecnologias: "tecnologias",
+            desarrollos: "desarrollos",
+            acercaDeMi: "acerca de mi"
+        },
+        en: {
+            inicio: "Home",
+            tecnologias: "technologies",
+            desarrollos: "Works",
+            acercaDeMi: "About me"
+        }
+    }
 
     const openMenu = () => {
         if( !isMenuActivated.value ) {

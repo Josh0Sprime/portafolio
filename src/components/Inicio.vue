@@ -1,13 +1,13 @@
 <template lang="">
    <div class="inicio">
-        <h1 class="inicio__user-info__title">Hola!</h1>
-        <h2 class="user-info__description">Mi nombre es Jorge, desarrollador full-stack <span class="user-info__important">apasionado  </span>por la programacion.</h2>
+        <h1 class="inicio__user-info__title">{{ hiMessage }}</h1>
+        <h2 class="user-info__description">{{ contentMessage }} <span class="user-info__important">{{ spanMessage }}  </span> {{ enOfContentMessage }}</h2>
         <div class="user-content__buttons">
-            <router-link class="content__buttons-route" :to="{ name: 'acercaDeMi' }">Conoce mas de mi!</router-link>
+            <router-link class="content__buttons-route" :to="{ name: 'acercaDeMi' }">{{ textButton }}</router-link>
         </div>
         <section class="inicio__make">
             <header>
-                <h3 class="make__title">Este sitio web fue desarrollado con</h3>
+                <h3 class="make__title">{{ tecMessage }}</h3>
             </header>
             <div class="make__prog">
                 <div class="prog__container">
@@ -34,7 +34,22 @@
 </template>
 <script setup>
 window.scroll({top: 0})
+const userLanguage = window.navigator.language;
+let hiMessage = "Hola!";
+let contentMessage = "Mi nombre es Jorge, desarrollador full-stack";
+let enOfContentMessage = "por la programacion";
+let textButton = "Conoce mas de mi!";
+let tecMessage = "Este sitio web fue desarrollado con";
 
+let spanMessage = "apasionado";
+if(userLanguage === "en") {
+    hiMessage = "Hi!";
+    contentMessage = "My name is Jorge, a full-stack developer ";
+    spanMessage = "passionate ";
+    enOfContentMessage = "about programming.";
+    textButton = "Learn more about me!";
+    tecMessage = "This website was developed with";
+}
 </script>
 <style scoped>
     .inicio__user-info__title {
@@ -110,7 +125,7 @@ window.scroll({top: 0})
     }
     .content__buttons-route:hover::after,
     .content__buttons-route:focus::after{
-        opacity: 1;
+        opacity: 0.9;
     }
     .content__buttons-route:hover::before,
     .content__buttons-route:focus::before {
