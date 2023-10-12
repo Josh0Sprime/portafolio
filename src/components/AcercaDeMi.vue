@@ -257,6 +257,23 @@
         font-size: 1.5rem;
     }
     @media (max-width: 760px) {
+
+        .study__info {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-2 {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-3 {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+
         .user-content__buttons {
             padding: 1rem;
             font-size: 0.8rem !important;
@@ -318,12 +335,42 @@
             padding: 0 2rem;
             gap: 5rem;
         }
+        .study__info {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-2 {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-3 {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
     }
 
     @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
         .about {
             padding: 0 2rem;
             gap: 5rem;
+        }
+        .study__info {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-2 {
+            left: 0;
+            opacity: 1;
+            animation: none;
+        }
+        .study__info-3 {
+            left: 0;
+            opacity: 1;
+            animation: none;
         }
     }
     

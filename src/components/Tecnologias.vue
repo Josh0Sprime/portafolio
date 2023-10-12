@@ -77,7 +77,6 @@
                 <fa class="see-more__icon" icon="fa-soli fa-chevron-down"/>
                 <p>Ver mas...</p>
             </div>
-
         </div>
     </div>
 </template> 
@@ -333,7 +332,7 @@ watch(currentPage, (newValue) => {
     .technology__header-container {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .technology::-webkit-scrollbar {
