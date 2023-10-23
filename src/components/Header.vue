@@ -4,25 +4,25 @@
             <router-link :to="{ name: 'inicio' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-home" />
-                    <a class="link__name">{{ menuLanguage[userLanguage].inicio }}</a>    
+                    <a class="link__name">inicio</a>    
                 </div>
             </router-link>
             <router-link :to="{ name: 'tecnologias' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-code" />
-                    <a class="link__name">{{ menuLanguage[userLanguage].tecnologias }}</a>
+                    <a class="link__name">tecnologias</a>
                 </div>
             </router-link>
             <router-link :to="{ name: 'desarrollos' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-briefcase" />
-                    <a class="link__name">{{ menuLanguage[userLanguage].desarrollos }}</a>
+                    <a class="link__name">desarrollos</a>
                 </div>
             </router-link>
             <router-link :to="{ name: 'acercaDeMi' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-user" />
-                    <a class="link__name">{{ menuLanguage[userLanguage].acercaDeMi }}</a>
+                    <a class="link__name">acerca de mi</a>
                 </div>
             </router-link>
         </div>
@@ -51,26 +51,11 @@
 </template>
 <script setup>
     import { ref } from 'vue'
-    const userLanguage = window.navigator.language;
     const variable = ref(null);
     const menuIcon = ref(null)
 
     const isMenuActivated = ref(false);
-    const menuLanguage = {
-        es: {
-            inicio: "inicio",
-            tecnologias: "tecnologias",
-            desarrollos: "desarrollos",
-            acercaDeMi: "acerca de mi"
-        },
-        en: {
-            inicio: "Home",
-            tecnologias: "technologies",
-            desarrollos: "Works",
-            acercaDeMi: "About me"
-        }
-    }
-
+    
     const openMenu = () => {
         if( !isMenuActivated.value ) {
             variable.value.classList.add("header__menu-small");
@@ -247,35 +232,30 @@
         text-decoration: none;
     }
     .header__menu {
+        width: 100%;
         max-width: 80rem;
         grid-area: menu;
         font-size: 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 8rem;
-        width: 100%;
         gap: 3rem;
     }
     .header {
         z-index: 1;
+        position: sticky;
+        top: 0;
+        margin-bottom: 5rem;
         display: flex;
         justify-content: center;
-        position: fixed;
-        top: 0;
         background-color: rgb(30 41 59);
-        height: 1%;
-        width: 100%;
-        padding: 2rem 0 1.5rem 0;
+        padding: 1rem;
     }
     .header__hamburguer {
-        display: none;
-        margin-bottom: 5rem;
-        width: 100%;
-        position: fixed;
+        z-index: 1;
+        position: sticky;
         top: 0;
-        padding: 0.8rem;
-        margin-left: 2rem;
+        background-color: rgb(30 41 59);
     }
 
     .header__menu-div {
@@ -295,6 +275,10 @@
     } */
 
     @media (max-width: 866px){
+        .header {
+            justify-content: start;
+            margin-bottom: 2rem;
+        }
         .header__menu {
             display: none;
         }
@@ -302,9 +286,6 @@
             display: block;
         }
         .link__icon-small-no-activate {
-            display: block;
-        }
-        .header__hamburguer {
             display: block;
         }
     }
@@ -317,9 +298,6 @@
             display: block;
         }
         .link__icon-small-no-activate {
-            display: block;
-        }
-        .header__hamburguer {
             display: block;
         }
     }

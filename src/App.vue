@@ -1,16 +1,15 @@
 <template>
-  <Home />
+  <Header />
+  <div class="content">
+      <router-view></router-view>
+  </div>
 </template>
 
-<script>
-import { defineAsyncComponent } from 'vue'
+<script setup>
 
-export default {
-  name: 'App',
-  components: {
-    Home: defineAsyncComponent(() => import("./view/Home.vue"))
-  }
-}
+import { defineAsyncComponent } from 'vue'
+const Header = defineAsyncComponent(() => import("./components/Header.vue"));
+
 </script>
 
 <style>
@@ -41,6 +40,12 @@ export default {
   scroll-behavior: smooth;
 }
 
+.content {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+
 body {
   box-sizing: border-box;
   font-size: 10px;
@@ -54,13 +59,4 @@ body {
   color: var(--color-primary);
 }
 
-@media (max-width: 760px) {
-  #app {
-   margin: 1rem auto;
-  }
-}
-
-
-body {
-}
 </style>
