@@ -165,6 +165,10 @@ watch(currentPage, (newValue) => {
     animation-delay: 100ms;
 }
 
+.technology-container > * {
+    flex-basis: 100%;
+}
+
 @keyframes mostrar-technology {
     100% {
         opacity: 1;
@@ -251,15 +255,14 @@ watch(currentPage, (newValue) => {
     .see-more__icon {
         background-color: var(--color-primary);
         color: black;
-        padding: 0.5rem;
+        padding: 0.5rem;    
         border-radius: 1rem;
-    }
+    }   
     .certificates-container__certificates {
-        width: fit-content;
         margin-top: 5rem;
         display: grid;
-        gap: 3rem 10rem;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
     }
     .certificates__certificate {
         display: flex;
@@ -274,7 +277,7 @@ watch(currentPage, (newValue) => {
     }
     .certificate__image {
         opacity: 0.8;
-        width: 20rem;
+        max-width: 100%;
         cursor: pointer;
         transition: all 300ms ease-in-out;
     }
@@ -313,6 +316,10 @@ watch(currentPage, (newValue) => {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 4rem;
+    }
+
+    .container-images {
+        margin-left: auto;
     }
    
     .container-image__image {
@@ -377,7 +384,6 @@ watch(currentPage, (newValue) => {
     .technology-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .content__title {
@@ -427,12 +433,12 @@ watch(currentPage, (newValue) => {
         }
       
       
-        .certificates-container__certificates {
+        /* .certificates-container__certificates {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 3rem 0;
-        }
+        } */
         .technology__certificates-container {
             display: flex;
             flex-direction: column;
@@ -452,12 +458,12 @@ watch(currentPage, (newValue) => {
         .technology {
             padding: 0 2rem;
         }
-        .certificates-container__certificates {
+        /* .certificates-container__certificates {
             display: flex;
             gap: 3rem 0;
             flex-wrap: wrap;
             justify-content: space-between;
-        }
+        } */
         .container-image__image {
             width: 70px;
         }
@@ -477,12 +483,12 @@ watch(currentPage, (newValue) => {
             gap: 5rem;
             align-items: baseline;
         }
-        .certificates-container__certificates {
+        /* .certificates-container__certificates {
             display: flex;
             gap: 3rem 1rem;
             flex-wrap: wrap;
             justify-content: space-between;
-        }   
+        }    */
     }
   
 </style>
