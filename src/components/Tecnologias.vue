@@ -1,5 +1,5 @@
 <template lang="">
-    <div id="technology" class="technology">
+    <div class="technology">
         <div class="technology-container">
             <header>
                 <div class="technology__header-container">
@@ -56,7 +56,7 @@
             <header>
                 <div class="technology__header">
                     <fa class="link__icon technology__cert" icon="fa-solid fa-certificate" />
-                    <h1 class="technology__title">Certificaciones</h1>
+                    <h1 class="certificates__title">Certificaciones</h1>
                 </div>
             </header>
             <div class="certificates-container__certificates">
@@ -192,6 +192,10 @@ watch(currentPage, (newValue) => {
   background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
+
+.certificates__title {
+    font-size: var(--title-low);
+}
 .lds-ellipsis div:nth-child(1) {
   left: 8px;
   animation: lds-ellipsis1 0.6s infinite;
@@ -233,7 +237,6 @@ watch(currentPage, (newValue) => {
   }
 }
     .certificate__image-container {
-        width: fit-content;
         overflow: hidden;
         border-radius: 0.5rem;
     }
@@ -369,15 +372,15 @@ watch(currentPage, (newValue) => {
     }
 
     .content__description {
+        line-height: 1;
         font-size: 1rem;
-        max-width: 50rem;
     }
     .technology__content {
         display: flex;
         justify-content: space-between;
     }
     .technology__title {
-        font-size: var(--title-low);
+        font-size: var(--title);
         color: var(--color-title);
     }
 
@@ -394,7 +397,7 @@ watch(currentPage, (newValue) => {
     .technology {
         display: flex;
         flex-direction: column;
-        gap: 15rem;
+        gap: 12rem;
     }
 
  
@@ -408,7 +411,7 @@ watch(currentPage, (newValue) => {
     }
 
     .technology__header {
-        display: flex;  
+        display: flex;      
         align-items: center;
         gap: 1rem;
     }
@@ -422,6 +425,7 @@ watch(currentPage, (newValue) => {
             gap: 5rem;
         }
         .technology {
+            gap: 5rem;
             padding: 0 2rem;
             display: flex;
             justify-content: center;
@@ -431,7 +435,9 @@ watch(currentPage, (newValue) => {
             flex-wrap: wrap;
             gap: 1rem;
         }
-      
+      .technology__title {
+        font-size: var(--title-low);
+      }
       
         /* .certificates-container__certificates {
             display: flex;

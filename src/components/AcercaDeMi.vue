@@ -7,7 +7,7 @@
                     <div class="me__image-primary-container">
                         <div class="me__image-container"></div>
                     </div>
-                    <div>
+                    <div class="me__personal-container">
                         <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
                         <div class="me__country-container">
                             <img class="me__country-image" src="../assets/img/cl.png" alt="">
@@ -160,7 +160,9 @@
     }
     .about {
         display: flex;
-        justify-content: space-between;
+    }
+    .about > * {
+        flex-basis: 100%;
     }
     .item__place {
         font-size: 1.5rem;
@@ -302,6 +304,11 @@
     }
     @media (max-width: 760px) {
 
+        .me__personal-container {
+           display: flex;
+           flex-direction: column;
+           gap: 0.5rem;
+        }
         .study__info {
             left: 0;
             opacity: 1;
@@ -324,7 +331,6 @@
         }
         .me__image-primary-container::before {
             content: "";
-            inset: -.2rem;
         }
         .me__title {
             font-size: 2rem !important;
@@ -333,18 +339,18 @@
         .me__name {
             font-size: 1rem !important;
         }
-        .me__info-container{
-            flex-direction: row;
-            align-items: center;
+      
+        .me__info-container > * {
+            flex-basis: 100%;
         }
         .me__image-primary-container {
-            width: 7rem;
-            height: 7rem;
+            width: 100% !important;
+            height: 100% !important;
         }
         .about {
             padding: 0 2rem;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
             gap: 5rem;
         }
         .item__study {
@@ -358,7 +364,6 @@
             gap: 2rem;
         }
         .me__image-container {
-            width: 10rem;
             height: 10rem;
         }
         .me__name {
