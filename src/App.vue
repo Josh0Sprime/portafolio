@@ -21,6 +21,7 @@ const Header = defineAsyncComponent(() => import("./components/Header.vue"));
 :root {
   --color-primary: #FFF;
   --color-highlight: rgb(94 234 212);
+  --color-highlight-hover: rgb(72, 197, 178);
   --color-title: #FFF;
   --icon-size-primary: 3rem;
   --title: 3rem;

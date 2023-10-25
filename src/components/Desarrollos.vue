@@ -7,8 +7,12 @@
             </div>
             <p class="development__description">
                 En el transcurso de mi carrera profesional, he desarollado aplicaciones web en el lado del servidor y en el lado del cliente 
-                con diversas tecnologias
+                con diversas tecnologias.
             </p>
+            <div class="description__highlight">
+                <fa class="description__icon" icon="fa-solid fa-exclamation-circle" />
+                <p>por motivos de seguridad la lista de aplicaciones solo seran visuales y debe completar el formulario login con cualquier informacion.</p>
+            </div>
         </header>
         <section class="development__webs">
             <section class="webs__spa">
@@ -20,8 +24,9 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/darwin.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicacion web para administrar evoluciones de pacientes.
                         </p>
+                        <a target="_blank" href="https://earnest-bienenstitch-47eb39.netlify.app/" class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -33,15 +38,16 @@
                                 <img class="languages__img" src="../assets/img/node.png" alt="">
                             </div>
                             <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
+                                <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
                         </div>
                     </article>
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/rakun.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicacion web para gestionar visitar de pacientes mediante Qr.
                         </p>
+                        <a target="_blank" class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -53,15 +59,16 @@
                                 <img class="languages__img" src="../assets/img/node.png" alt="">
                             </div>
                             <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
+                                <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
                         </div>
                     </article>
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/contrarreferencia.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicacion web para almacenar archivos privados.
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -73,15 +80,16 @@
                                 <img class="languages__img" src="../assets/img/node.png" alt="">
                             </div>
                             <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
+                                <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
                         </div>
                     </article>
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/hermes.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicacion web para gestionar atencion de urgencia, categorizar paciente segun su gravedad, atencion de box y tipo de alta.
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -93,15 +101,16 @@
                                 <img class="languages__img" src="../assets/img/node.png" alt="">
                             </div>
                             <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
+                                <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
                         </div>
                     </article>
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/aps.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicacion web para consultorios, para gestionar las derivaciones de sistema hermes.
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -113,7 +122,7 @@
                                 <img class="languages__img" src="../assets/img/node.png" alt="">
                             </div>
                             <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
+                                <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
                         </div>
                     </article>
@@ -132,6 +141,7 @@
                         <p class="content__description">
                             Aplicacion web para administrar evoluciones de pacientes
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
@@ -141,9 +151,6 @@
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/jquery.png" alt="">
-                            </div>
-                            <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/mysql.png" alt="">
@@ -155,6 +162,7 @@
                         <p class="content__description">
                             Aplicacion web para administrar evoluciones de pacientes
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
@@ -164,9 +172,6 @@
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/jquery.png" alt="">
-                            </div>
-                            <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/mysql.png" alt="">
@@ -178,6 +183,7 @@
                         <p class="content__description">
                             Aplicacion web para administrar evoluciones de pacientes
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
@@ -187,9 +193,6 @@
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/jquery.png" alt="">
-                            </div>
-                            <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/mysql.png" alt="">
@@ -201,6 +204,7 @@
                         <p class="content__description">
                             Aplicacion web para administrar evoluciones de pacientes
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
@@ -210,9 +214,6 @@
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/jquery.png" alt="">
-                            </div>
-                            <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/mysql.png" alt="">
@@ -224,6 +225,7 @@
                         <p class="content__description">
                             Aplicacion web para administrar evoluciones de pacientes
                         </p>
+                        <a class="content_button">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
@@ -233,9 +235,6 @@
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/jquery.png" alt="">
-                            </div>
-                            <div class="languages__image-container">
-                                <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/mysql.png" alt="">
@@ -271,6 +270,8 @@ window.scroll({top: 0})
     gap: 2rem;
 }
 .content__description {
+    line-height: 1.1;
+    font-size: 1.2rem;
     color: var(--clr-1);
 }
 
@@ -301,6 +302,7 @@ window.scroll({top: 0})
 .content__content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
     padding: 1rem 1.5rem;
     background-color: var(--color-primary);
@@ -317,6 +319,7 @@ window.scroll({top: 0})
     display: flex;
     align-items: center;
     width: 3rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 40px -10px black;
 }
 .spa__container {
@@ -324,7 +327,35 @@ window.scroll({top: 0})
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
+.content_button {
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: var(--color-highlight);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+}
+.content_button:hover{
+    background-color: var(--color-highlight-hover);
+}
+.description__highlight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.description__icon {
+    color: rgb(252 211 77);
+    font-size: 1.2rem;
+}
 @keyframes mostrar-inicio {
     100% {
         opacity: 1;

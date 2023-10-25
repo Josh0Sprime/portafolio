@@ -160,10 +160,9 @@
     }
     .about {
         display: flex;
+        justify-content: space-between;
     }
-    .about > * {
-        flex-basis: 100%;
-    }
+    
     .item__place {
         font-size: 1.5rem;
     }
