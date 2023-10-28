@@ -247,7 +247,6 @@
         top: 0;
         margin-bottom: 5rem;
         display: flex;
-        justify-content: center;
         background-color: rgb(30 41 59);
         padding: 1rem;
     }

@@ -26,7 +26,7 @@
                         <p class="content__description">
                             Aplicación web para administrar evoluciones de pacientes.
                         </p>
-                        <a target="_blank" href="https://earnest-bienenstitch-47eb39.netlify.app/" class="content_button">Visitar</a>
+                        <a target="_blank" href="https://earnest-bienenstitch-47eb39.netlify.app/" class="content_button button-pointer">Visitar</a>
                         <div class="content__languages">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
@@ -43,12 +43,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/rakun.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/rakun.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para gestionar visitar de pacientes mediante Qr.
                         </p>
-                        <a target="_blank" class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a target="_blank" class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
@@ -64,12 +65,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/contrarreferencia.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/contrarreferencia.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para almacenar archivos privados.
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
@@ -85,12 +87,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/hermes.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/hermes.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para gestionar atención de urgencia, categorizar paciente según su gravedad, atención de box y tipo de alta.
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
@@ -106,12 +109,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/aps.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/aps.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para consultorios, para gestionar las derivaciones de sistema Hermes.
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/typescript.png" alt="">
                             </div>
@@ -137,12 +141,13 @@
                 </header>
                 <section class="spa__container">
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/bolsatrabajo.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/bolsatrabajo.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para administrar evoluciones de pacientes
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
@@ -158,12 +163,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/fenix.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/fenix.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para administrar evoluciones de pacientes
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
@@ -179,12 +185,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/antimicrobiano.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/antimicrobiano.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para administrar evoluciones de pacientes
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
@@ -200,12 +207,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/gestiondocumental.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/gestiondocumental.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para administrar evoluciones de pacientes
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
@@ -221,12 +229,13 @@
                         </div>
                     </article>
                     <article class="content__content">
-                        <img class="content__img" src="../assets/img/proyectos/boletas.png" alt="">
-                        <p class="content__description">
+                        <fa class="link__icon lock-project" icon="fa-solid fa-lock" />
+                        <img class="content__img pending-project" src="../assets/img/proyectos/boletas.png" alt="">
+                        <p class="content__description pending-project">
                             Aplicación web para administrar evoluciones de pacientes
                         </p>
-                        <a class="content_button">Visitar</a>
-                        <div class="content__languages">
+                        <a class="content_button pending-project">Visitar</a>
+                        <div class="content__languages pending-project">
                             <div class="languages__image-container">
                                 <img class="languages__img" src="../assets/img/js.png" alt="">
                             </div>
@@ -300,6 +309,7 @@ window.scroll({top: 0})
     color: var(--color-title);
 }
 .content__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -327,18 +337,37 @@ window.scroll({top: 0})
     gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.pending-project {
+    filter: grayscale(2);
+    filter: blur(0.2rem);
+}
+
+.lock-project {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    top: 8rem;
+    right: 0rem;
+    margin: 0 auto;
+    color: rgb(252 211 77);
+}
 .content_button {
     text-decoration: none;
     color: var(--color-primary);
     background-color: var(--color-highlight);
     border-radius: 1rem;
     padding: 0.2rem;
-    cursor: pointer;
     font-size: 1.2rem;
     text-align: center;
     transition: all 200ms ease-in-out;
 }
-.content_button:hover{
+
+.button-pointer {
+    cursor: pointer;
+}
+.button-pointer:hover{
     background-color: var(--color-highlight-hover);
 }
 .description__highlight {

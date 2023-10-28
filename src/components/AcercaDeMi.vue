@@ -318,6 +318,7 @@
             opacity: 1;
             animation: none;
         }
+       
         .study__info-3 {
             left: 0;
             opacity: 1;
@@ -342,9 +343,12 @@
         .me__info-container > * {
             flex-basis: 100%;
         }
+        .me__info-container {
+            flex-direction: row;
+        }
         .me__image-primary-container {
-            width: 100% !important;
-            height: 100% !important;
+            width: 200px;
+            height: 200px;
         }
         .about {
             padding: 0 2rem;
