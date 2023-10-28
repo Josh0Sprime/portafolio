@@ -40,7 +40,7 @@
                                     <p class="item__date"> Actual </p>
                                     <img class="study__date-image" src="../assets/img/pending.svg" alt="">
                             </span>
-                            <h3 class="item__study">Ingenieria Informatica</h3>
+                            <h3 class="item__study">Ingeniería Informática</h3>
                             <p class="item__place">Instituto IACC</p>
                         </div>  
                     </div>
@@ -57,7 +57,7 @@
                                     <img class="study__date-image" src="../assets/img/pending.svg" alt="">
                             </span>
                             <h3 class="item__study">Diplomado desarrollo web</h3>
-                            <p class="item__place">Pontificia Universidad Catolica de Chile</p>
+                            <p class="item__place">Pontificia Universidad Católica de Chile</p>
                         </div>
                     </div>
                     <div class="study__item">

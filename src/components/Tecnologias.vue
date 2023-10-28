@@ -5,11 +5,11 @@
                 <div class="technology__header-container">
                     <div class="technology__header">
                         <fa class="link__icon technology__icon" icon="fa-solid fa-code" />
-                        <h1 class="technology__title">Tecnologias</h1>
+                        <h1 class="technology__title">Tecnologías</h1>
                     </div>
                     <div>
-                        <h2 class="content__title">Conocimientos en tecnologias</h2>
-                        <p class="content__description">Siempre estoy en constante aprendizaje para desarrollar aplicaciones web con las mejores practicas y las tecnologias mas nuevas y populares</p>
+                        <h2 class="content__title">Conocimientos en tecnologías</h2>
+                        <p class="content__description">Siempre estoy en constante aprendizaje para desarrollar aplicaciones web con las mejores practicas y las tecnologías mas nuevas y populares</p>
                     </div>
                 </div>
             </header>

@@ -6,12 +6,12 @@
                 <h1 class="development__title">Desarrollos</h1>
             </div>
             <p class="development__description">
-                En el transcurso de mi carrera profesional, he desarollado aplicaciones web en el lado del servidor y en el lado del cliente 
-                con diversas tecnologias.
+                En el transcurso de mi carrera profesional, he desarrollado aplicaciones web en el lado del servidor y en el lado del cliente 
+                con diversas tecnologías.
             </p>
             <div class="description__highlight">
                 <fa class="description__icon" icon="fa-solid fa-exclamation-circle" />
-                <p>por motivos de seguridad la lista de aplicaciones solo seran visuales y debe completar el formulario login con cualquier informacion.</p>
+                <p>por motivos de seguridad la lista de aplicaciones solo serán visuales y debe completar el formulario login con cualquier información.</p>
             </div>
         </header>
         <section class="development__webs">
@@ -24,7 +24,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/darwin.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes.
+                            Aplicación web para administrar evoluciones de pacientes.
                         </p>
                         <a target="_blank" href="https://earnest-bienenstitch-47eb39.netlify.app/" class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -45,7 +45,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/rakun.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para gestionar visitar de pacientes mediante Qr.
+                            Aplicación web para gestionar visitar de pacientes mediante Qr.
                         </p>
                         <a target="_blank" class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -66,7 +66,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/contrarreferencia.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para almacenar archivos privados.
+                            Aplicación web para almacenar archivos privados.
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -87,7 +87,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/hermes.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para gestionar atencion de urgencia, categorizar paciente segun su gravedad, atencion de box y tipo de alta.
+                            Aplicación web para gestionar atención de urgencia, categorizar paciente según su gravedad, atención de box y tipo de alta.
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -108,7 +108,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/aps.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para consultorios, para gestionar las derivaciones de sistema hermes.
+                            Aplicación web para consultorios, para gestionar las derivaciones de sistema Hermes.
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -139,7 +139,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/bolsatrabajo.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicación web para administrar evoluciones de pacientes
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -160,7 +160,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/fenix.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicación web para administrar evoluciones de pacientes
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -181,7 +181,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/antimicrobiano.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicación web para administrar evoluciones de pacientes
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -202,7 +202,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/gestiondocumental.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicación web para administrar evoluciones de pacientes
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">
@@ -223,7 +223,7 @@
                     <article class="content__content">
                         <img class="content__img" src="../assets/img/proyectos/boletas.png" alt="">
                         <p class="content__description">
-                            Aplicacion web para administrar evoluciones de pacientes
+                            Aplicación web para administrar evoluciones de pacientes
                         </p>
                         <a class="content_button">Visitar</a>
                         <div class="content__languages">

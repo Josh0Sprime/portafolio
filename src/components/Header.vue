@@ -10,7 +10,7 @@
             <router-link :to="{ name: 'tecnologias' }">
                 <div class="menu__link">
                     <fa class="link__icon" icon="fa-solid fa-code" />
-                    <a class="link__name">tecnologias</a>
+                    <a class="link__name">tecnologías</a>
                 </div>
             </router-link>
             <router-link :to="{ name: 'desarrollos' }">
@@ -35,7 +35,7 @@
                 </router-link>
                 <router-link :to="{ name: 'tecnologias' }" class="menu__link-phone">
                     <fa class="link__icon-phone" icon="fa-solid fa-code" />
-                    <a class="link__name-small">Tecnologias</a>
+                    <a class="link__name-small">Tecnologías</a>
                 </router-link>
                 <router-link :to="{ name: 'desarrollos' }" class="menu__link-phone">
                     <fa class="link__icon-phone" icon="fa-solid fa-briefcase" />

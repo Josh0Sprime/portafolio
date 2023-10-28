@@ -1,7 +1,7 @@
 <template lang="">
    <div class="inicio">
         <h1 class="inicio__user-info__title">Hola!</h1>
-        <h2 class="user-info__description">Mi nombre es Jorge, desarrollador full-stack <span class="user-info__important">apasionado  </span> por la programacion</h2>
+        <h2 class="user-info__description">Mi nombre es Jorge, desarrollador full-stack <span class="user-info__important">apasionado  </span> por la programación</h2>
         <div class="user-content__buttons">
             <router-link class="content__buttons-route" :to="{ name: 'acercaDeMi' }">Conoce mas de mi!</router-link>
         </div>
