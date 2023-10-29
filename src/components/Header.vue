@@ -232,6 +232,7 @@
         text-decoration: none;
     }
     .header__menu {
+        margin: 0 auto;
         width: 100%;
         max-width: 80rem;
         grid-area: menu;

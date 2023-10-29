@@ -345,10 +345,12 @@
         }
         .me__info-container {
             flex-direction: row;
+            flex-wrap: wrap;
         }
-        .me__image-primary-container {
-            width: 200px;
-            height: 200px;
+        .me__image-primary-container,
+        .me__image-primary-container::after,
+        .me__image-primary-container::before {
+            max-width: 100%;
         }
         .about {
             padding: 0 2rem;
