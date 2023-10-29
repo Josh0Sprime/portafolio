@@ -352,6 +352,10 @@
         .me__image-primary-container::before {
             max-width: 100%;
         }
+        .me__image-primary-container::before {
+            display: none;
+        }
+        
         .about {
             padding: 0 2rem;
             flex-direction: column;
