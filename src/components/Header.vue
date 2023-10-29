@@ -246,7 +246,6 @@
         z-index: 1;
         position: sticky;
         top: 0;
-        margin-bottom: 5rem;
         display: flex;
         background-color: rgb(30 41 59);
         padding: 1rem;

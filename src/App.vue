@@ -43,7 +43,7 @@ const Header = defineAsyncComponent(() => import("./components/Header.vue"));
 
 .content {
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 
