@@ -82,7 +82,7 @@
     </div>
 </template>
 <script setup>
-  import cv from "../assets/files/CV.pdf"
+  import cv from "../assets/files/cv.pdf"
   window.scroll({top: 0});
 
 
