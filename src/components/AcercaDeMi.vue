@@ -35,7 +35,7 @@
                         </div>
                         <div class="study__info">                            
                             <span class="study__container-date">
-                                    <p class="item__date">Mayo de 2023</p>
+                                    <p class="item__date">Octubre de 2023</p>
                                     <p>-</p>
                                     <p class="item__date"> Actual </p>
                                     <img class="study__date-image" src="../assets/img/pending.svg" alt="">
@@ -51,7 +51,7 @@
                         </div>
                         <div class="study__info-2">                            
                             <span class="study__container-date">
-                                    <p class="item__date">Mayo de 2023</p>
+                                    <p class="item__date">Agosto de 2023</p>
                                     <p>-</p>
                                     <p class="item__date"> Actual </p>
                                     <img class="study__date-image" src="../assets/img/pending.svg" alt="">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="study__info-3">                   
                             <span class="study__container-date">
-                                <p class="item__date">Mayo de 2023</p>
+                                <p class="item__date">Marzo de 2020</p>
                                 <p>-</p>
                                 <p class="item__date">diciembre de 2022 </p>
                                 <img class="study__date-image" src="../assets/img/complete.svg" alt="">
@@ -221,6 +221,10 @@
         display: flex;
         flex-direction: column;
     }
+    .study__content > * {
+        flex-basis: 100%;
+    }
+
     .study__container {
         display: flex;
     }
