@@ -10,11 +10,11 @@
                     <div class="me__personal-container">
                         <h2 class="me__name">Jorge Tomas Cortes Fernandez</h2>
                         <div class="me__country-container">
-                            <img class="me__country-image" src="../assets/img/cl.png" alt="">
                             <p class="me__year">Chileno</p>
+                            <img class="me__country-image" src="../assets/img/cl.png" alt="">
                         </div>
                         <p class="me__year">jorgecf.9830@outlook.cl</p>
-                        <p class="me__year">23 años</p>
+                        <p class="me__year">25 años</p>
                         <a :href="cv" download class="user-content__buttons">
                             Descargar CV
                         </a>
