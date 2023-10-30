@@ -46,6 +46,12 @@ const Header = defineAsyncComponent(() => import("./components/Header.vue"));
   margin: 5rem auto;
 }
 
+@media(max-width: 760px) {
+  .content {
+    margin: 2rem auto;
+  }
+}
+
 
 body {
   box-sizing: border-box;
